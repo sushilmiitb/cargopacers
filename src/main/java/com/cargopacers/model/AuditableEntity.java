@@ -12,6 +12,7 @@ import javax.persistence.PreUpdate;
  *  
  *  @author mukesh
  */
+@Deprecated
 @MappedSuperclass
 public abstract class AuditableEntity {
   @Id

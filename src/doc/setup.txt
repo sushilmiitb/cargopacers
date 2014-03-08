@@ -20,4 +20,3 @@ mvn clean package
 code will get deployed to your tomcat webapps
 
 access on browser http://localhost:8080/cargo/
-

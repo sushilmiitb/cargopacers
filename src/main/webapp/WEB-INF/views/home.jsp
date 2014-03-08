@@ -2,9 +2,16 @@
 
 <tiles:insertDefinition name="homepage">
   <tiles:putAttribute name="body">
-    <div>
-      <h1>Home page !</h1>
-      This is home page.
+    <div class="row">
+      <div class="col-md-3">
+        left
+      </div>
+      <div class="col-md-6">
+        center
+      </div>
+      <div class="col-md-3">
+        right
+      </div>
     </div>
   </tiles:putAttribute>
 </tiles:insertDefinition>
