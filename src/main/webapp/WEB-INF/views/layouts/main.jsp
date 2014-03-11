@@ -11,7 +11,7 @@
 <tiles:insertAttribute name="head" defaultValue="" />
 </head>
 <body>
-  <div class="container">
+  <div>
   <tiles:insertAttribute name="header" defaultValue="header.jsp" />
   <tiles:insertAttribute name="body" />
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
