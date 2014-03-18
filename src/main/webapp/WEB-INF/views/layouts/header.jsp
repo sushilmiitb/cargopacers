@@ -19,9 +19,10 @@
 						<li><a href="#">Services</a></li>
 						<li><a href="#">Contact US</a></li>
 						<li class=" divider"></li>
-						<li class="dropdown"><a href="#" class="dropdown-toggle"
-							data-hover="dropdown" data-toggle="dropdown">Track Order<b
-								class="caret"></b></a>
+						<li id="track1" onmouseout="closeDropdown('track1')"
+							onmouseover="activeDropdown('track1')" class="dropdown"><a
+							href="#" class="dropdown-toggle" data-hover="dropdown"
+							data-toggle="dropdown">Track Order<b class="caret"></b></a>
 							<ul class="dropdown-menu"
 								style="padding: 15px; padding-bottom: 15px;">
 								<form action="[YOUR ACTION]" method="post"
@@ -36,9 +37,10 @@
 										type="submit" name="commit" value="Sign In" />
 								</form>
 							</ul></li>
-						<li class="dropdown"><a href="#" class="dropdown-toggle"
-							data-hover="dropdown" data-toggle="dropdown">Login<strong
-								class="caret"></strong></a>
+						<li id="login1" onmouseout="closeDropdown('login1')"
+							onmouseover="activeDropdown('login1')" class="dropdown"><a
+							href="#" class="dropdown-toggle" data-hover="dropdown"
+							data-toggle="dropdown">Login<strong class="caret"></strong></a>
 							<ul class="dropdown-menu"
 								style="padding: 15px; padding-bottom: 15px;">
 								<form action="[YOUR ACTION]" method="post"
