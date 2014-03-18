@@ -11,14 +11,15 @@
 					</button>
 					<a class="navbar-brand" href="#">Cargopacers</a>
 				</div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse"
 					id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="#">Home</a></li>
-						<li><a href="#">About US</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Contact US</a></li>
-						<li class=" divider"></li>
+			      <ul class="nav navbar-nav navbar-right">
+          <li class="active" id="home" onclick="changeStyle('home','aboutus','services','contactus')"><a href="home">Home</a></li>
+          <li id="aboutus"><a href="aboutus" onclick="changeStyle('aboutus','home','contactus','services')">About US</a></li>
+          <li id="services"><a href="services" onclick="changeStyle('services','home','aboutus','contactus')">Services</a></li>
+          <li id="contactus"><a href="contactus" onclick="changeStyle('contactus','home','aboutus','services')">Contact US</a></li>
+          <li class=" divider"></li>
 						<li id="track1" onmouseout="closeDropdown('track1')"
 							onmouseover="activeDropdown('track1')" class="dropdown"><a
 							href="#" class="dropdown-toggle" data-hover="dropdown"
@@ -61,7 +62,38 @@
 						<li><a href="#">Register</a></li>
 						</li>
 					</ul>
-				</div>
+        <script type="text/javascript">
+  		  var divSelected = null;
+  		  var pathname = window.location.pathname;
+  		  if(pathname == "/cargo/aboutus")
+  			  {
+  				 document.getElementById('aboutus').className = 'active';
+  				 document.getElementById('home').className = '';
+  				 document.getElementById('services').className = '';
+  				 document.getElementById('contactus').className = '';
+  			  }
+  		  else if(pathname == "/cargo/home")
+			  {
+				 document.getElementById('home').className = 'active';
+				 document.getElementById('aboutus').className = '';
+				 document.getElementById('services').className = '';
+				 document.getElementById('contactus').className = '';
+			  }
+  		  else if(pathname == "/cargo/services")
+		  {
+			 document.getElementById('services').className = 'active';
+			 document.getElementById('aboutus').className = '';
+			 document.getElementById('home').className = '';
+			 document.getElementById('contactus').className = '';
+		  }
+  		else if(pathname == "/cargo/contactus")
+		  {
+			 document.getElementById('contactus').className = 'active';
+			 document.getElementById('aboutus').className = '';
+			 document.getElementById('services').className = '';
+			 document.getElementById('home').className = '';
+		  }
+</script>
 			</div>
 		</div>
 	</nav>
