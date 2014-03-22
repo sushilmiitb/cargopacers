@@ -4963,17 +4963,3 @@ button.close {
 		display: none !important
 	}
 }
-.dropdown:hover .dropdown-menu {
-	display: block;
-}
-
-#footerLinks a {
-	line-height: 50px;
-	font-weight: normal;
-	color: #1833CC;
-	margin-right: 4%;
-	margin-right-value: 4%;
-	margin-right-ltr-source: physical;
-	margin-right-rtl-source: physical;
-	font-size: 12px
-}
