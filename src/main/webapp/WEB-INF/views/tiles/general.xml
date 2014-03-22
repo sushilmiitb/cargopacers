@@ -15,6 +15,11 @@
     <put-attribute name="title" value="Cargo Pacers AboutUs Page" />
     <put-attribute name="footer" value="/WEB-INF/views/layouts/footer.jsp" />
   </definition>
+  
+   <definition name="loginpage" extends="header" template="/WEB-INF/views/layouts/main.jsp">
+    <put-attribute name="title" value="Cargo Pacers AboutUs Page" />
+    <put-attribute name="footer" value="/WEB-INF/views/layouts/footer.jsp" />
+  </definition>
 
   <definition name="shipperHome" template="/WEB-INF/views/layouts/shipperMain.jsp">
   	<put-attribute name="title" value="Cargo Pacers Home Page" />
