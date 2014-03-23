@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <div>
 	<nav class="navbar navbar-default" role="navigation">
 		<div class="container-fluid">
