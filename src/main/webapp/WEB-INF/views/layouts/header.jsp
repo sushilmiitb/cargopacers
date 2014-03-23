@@ -44,13 +44,13 @@
 							data-toggle="dropdown">Login<strong class="caret"></strong></a>
 							<ul class="dropdown-menu"
 								style="padding: 15px; padding-bottom: 15px;">
-								<form action="login" modelAttribute="login" method="post"
+								<form action="/cargo/j_spring_security_check" modelAttribute="login" method="post"
 									accept-charset="UTF-8">
-									<input id="username" style="margin-bottom: 15px;"
-										type="text" name="user" size="30"
-										placeholder="Username" /> <input id="password"
+									<input id="j_username" style="margin-bottom: 15px;"
+										type="text" name="j_username" size="30"
+										placeholder="Username" /> <input id="j_password"
 										style="margin-bottom: 15px;" type="password"
-										name="password" size="30" placeholder="Password" /> <input
+										name="j_password" size="30" placeholder="Password" /> <input
 										id="user_remember_me" style="float: left; margin-right: 10px;"
 										type="checkbox" name="user[remember_me]" value="1" /> <label
 										class="string optional" for="user_remember_me">Remember

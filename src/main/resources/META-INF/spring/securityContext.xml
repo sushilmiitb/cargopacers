@@ -11,19 +11,23 @@
 
   <global-method-security secured-annotations="enabled" />
   <http pattern="/static/**" security="none" />
-  <http pattern="/home.jsp*" security="none" />
 
   <http auto-config="true">
+    <intercept-url pattern="/login.jsp*" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+    <intercept-url pattern="/home" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+    <intercept-url pattern="/" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
     <intercept-url pattern="/**" access="ROLE_USER" />
-    <form-login login-page="/login" default-target-url="/success" 
-    authentication-failure-url="/aboutus"/>
+    <form-login />
     <logout />
   </http>
+
   <beans:bean name="bcryptEncoder"
     class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
   <authentication-manager>
     <authentication-provider>
+    <!--  
     <password-encoder ref="bcryptEncoder"/>
+    -->
       <user-service>
         <user name="admin" password="admin" authorities="ROLE_USER, ROLE_ADMIN" />
         <user name="user" password="user" authorities="ROLE_USER" />
