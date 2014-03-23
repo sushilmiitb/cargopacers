@@ -53,22 +53,24 @@
 						</div>
 						<button type="submit" class="btn btn-info">Track</button>
 					</form>
-					<div class="callbacks_border">
-						<div class="callbacks_pad"
-							style="border: 2px solid #808285; height: 246px;">
-							<div class="callbacks_container" style="clear: both">
-								<ul class="rslides" id="slider1" style="height: 242px;">
-									<li><img class="img-responsive"
-										src="/cargo/static/img/Pic-1.jpg" alt="Slide 2" />
-										<p class="caption">pic1</p></li>
-									<li><img class="img-responsive"
-										src="/cargo/static/img/Pic-2 Tailored-Solutions.jpg"
-										alt="Slide 3" />
-										<p class="caption">pic2</p></li>
-									<li><img class="img-responsive"
-										src="/cargo/static/img/Pic-3.jpg" alt="Slide 4" />
-										<p class="caption">pic3</p></li>
-								</ul>
+					<div style="margin-top: 5.5%">
+						<div class="pad" style="margin-top: 5.5%">
+							<div class="panel panel-default col-xs-offset-3">
+								<div class="panel-body" style="background-color: #DDD;">
+									<ul class="rslides" id="slider1"
+										style="border: 2px solid #DDD; background-color: #FFFFFF;">
+										<li><img class="img-responsive"
+											src="/cargo/static/img/Pic-1.jpg" alt="Slide 2" />
+											<p class="caption">pic1</p></li>
+										<li><img class="img-responsive"
+											src="/cargo/static/img/Pic-2 Tailored-Solutions.jpg"
+											alt="Slide 3" />
+											<p class="caption">pic2</p></li>
+										<li><img class="img-responsive"
+											src="/cargo/static/img/Pic-3.jpg" alt="Slide 4" />
+											<p class="caption">pic3</p></li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -76,25 +78,13 @@
 			</div>
 			<div class="row">
 				<div class="col-md-4 about">who are we?</div>
-
-
 				<div class="col-md-4 about">why choose us?</div>
-
 				<div class="col-md-4 about">video</div>
-
-
-
-
 			</div>
-
 			<div class="row">
 				<div class="col-md-4 about">review 1</div>
-
 				<div class="col-md-4 about">review 2</div>
-
 				<div class="col-md-4 about">review 3</div>
-
-
 			</div>
 		</div>
 	</tiles:putAttribute>
