@@ -2,7 +2,7 @@
 
 <tiles:insertDefinition name="homepage">
 	<tiles:putAttribute name="body">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-6">
 					<div class="pad" style="margin-top: 10%">
@@ -45,8 +45,8 @@
 					</div>
 				</div>
 				<div class="col-md-6">
-					<form class="form-inline" role="form"
-						style="margin-bottom: 8%; float: right; margin-right:7%">
+					<form class="form-inline col-xs-offset-6" role="form"
+						style="margin-bottom: 15px;">
 						<div class="form-group">
 							<input type="text" class="form-control control-label"
 								id="exampleInputEmail2" placeholder="Tracking ID">
@@ -54,15 +54,19 @@
 						<button type="submit" class="btn btn-info">Track</button>
 					</form>
 					<div class="callbacks_border">
-						<div class="callbacks_pad" style="border: 2px solid #808285; height:246px;">
+						<div class="callbacks_pad"
+							style="border: 2px solid #808285; height: 246px;">
 							<div class="callbacks_container" style="clear: both">
-								<ul class="rslides" id="slider1" style="height:242px;" >
-									<li><img src="/cargo/static/img/Pic-1.jpg" alt="Slide 2" />
+								<ul class="rslides" id="slider1" style="height: 242px;">
+									<li><img class="img-responsive"
+										src="/cargo/static/img/Pic-1.jpg" alt="Slide 2" />
 										<p class="caption">pic1</p></li>
-									<li><img src="/cargo/static/img/Pic-2 Tailored-Solutions.jpg"
+									<li><img class="img-responsive"
+										src="/cargo/static/img/Pic-2 Tailored-Solutions.jpg"
 										alt="Slide 3" />
 										<p class="caption">pic2</p></li>
-									<li><img src="/cargo/static/img/Pic-3.jpg" alt="Slide 4" />
+									<li><img class="img-responsive"
+										src="/cargo/static/img/Pic-3.jpg" alt="Slide 4" />
 										<p class="caption">pic3</p></li>
 								</ul>
 							</div>
