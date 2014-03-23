@@ -1,17 +1,97 @@
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
 
 <tiles:insertDefinition name="homepage">
-  <tiles:putAttribute name="body">
-    <div class="row">
-      <div class="col-md-3">
-        left
-      </div>
-      <div class="col-md-6">
-        center
-      </div>
-      <div class="col-md-3">
-        right
-      </div>
-    </div>
-  </tiles:putAttribute>
+	<tiles:putAttribute name="body">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="pad" style="margin-top: 10%">
+						<div class="panel panel-info">
+							<div class="text-center panel-heading">Full Truck Load</div>
+							<form class="form-horizontal panel-body text-center" role="form"
+								style="">
+								<div class="form-group">
+									<label for="Source" class="col-sm-4 control-label">Source</label>
+									<div class="col-sm-6">
+										<input type="text" class="form-control" id="source"
+											placeholder="Source">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="Destination" class="col-sm-4 control-label">Destination</label>
+									<div class="col-sm-6">
+										<input type="text" class="form-control" id="destination"
+											placeholder="Destination">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="Date" class="col-sm-4 control-label">Pick-Up
+										Date</label>
+									<div class="col-sm-6">
+										<div class="right-inner-addon">
+											<i class="glyphicon glyphicon-calendar"> </i> <input
+												type="date" class="form-control" id="date"
+												placeholder="date">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-offset-2 col-sm-10">
+										<button type="submit" class="btn btn-info">Search</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<form class="form-inline" role="form"
+						style="margin-bottom: 8%; float: right; margin-right:7%">
+						<div class="form-group">
+							<input type="text" class="form-control control-label"
+								id="exampleInputEmail2" placeholder="Tracking ID">
+						</div>
+						<button type="submit" class="btn btn-info">Track</button>
+					</form>
+					<div class="callbacks_border">
+						<div class="callbacks_pad" style="border: 2px solid #808285; height:246px;">
+							<div class="callbacks_container" style="clear: both">
+								<ul class="rslides" id="slider1" style="height:242px;" >
+									<li><img src="/cargo/static/img/Pic-1.jpg" alt="Slide 2" />
+										<p class="caption">pic1</p></li>
+									<li><img src="/cargo/static/img/Pic-2 Tailored-Solutions.jpg"
+										alt="Slide 3" />
+										<p class="caption">pic2</p></li>
+									<li><img src="/cargo/static/img/Pic-3.jpg" alt="Slide 4" />
+										<p class="caption">pic3</p></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 about">who are we?</div>
+
+
+				<div class="col-md-4 about">why choose us?</div>
+
+				<div class="col-md-4 about">video</div>
+
+
+
+
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 about">review 1</div>
+
+				<div class="col-md-4 about">review 2</div>
+
+				<div class="col-md-4 about">review 3</div>
+
+
+			</div>
+		</div>
+	</tiles:putAttribute>
 </tiles:insertDefinition>
