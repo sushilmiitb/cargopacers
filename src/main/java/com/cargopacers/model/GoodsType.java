@@ -6,5 +6,7 @@ package com.cargopacers.model;
  *
  */
 public enum GoodsType {
-
+  STONE,
+  GARMENT
+  
 }

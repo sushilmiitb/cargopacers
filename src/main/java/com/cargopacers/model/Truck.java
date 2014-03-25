@@ -19,7 +19,9 @@ import org.springframework.data.annotation.LastModifiedDate;
 public class Truck implements Serializable {
   private static final long serialVersionUID = -4964348096061987796L;
   public static enum Type {
-    
+    NINE_TON,
+    TEN_TON,
+    FIFTEEN_TON
   };
   
   @Id
