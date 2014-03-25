@@ -5,7 +5,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-6">
-					<div class="pad" style="margin-top: 10%">
+					<div class="pad" style="margin-top: 11%">
 						<div class="panel panel-info">
 							<div class="text-center panel-heading">Full Truck Load</div>
 							<form class="form-horizontal panel-body text-center" role="form"
@@ -22,6 +22,13 @@
 									<div class="col-sm-6">
 										<input type="text" class="form-control" id="destination"
 											placeholder="Destination">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="weight" class="col-sm-4 control-label">Weight</label>
+									<div class="col-sm-6">
+										<input type="text" class="form-control" id="weight"
+											placeholder="Weight(Tonnage)">
 									</div>
 								</div>
 								<div class="form-group">
@@ -45,7 +52,7 @@
 					</div>
 				</div>
 				<div class="col-md-6">
-					<form class="form-inline col-xs-offset-6" role="form"
+					<form class="form-inline col-xs-offset-7" role="form"
 						style="margin-bottom: 15px;">
 						<div class="form-group">
 							<input type="text" class="form-control control-label"
@@ -55,10 +62,10 @@
 					</form>
 					<div style="margin-top: 5.5%">
 						<div class="pad" style="margin-top: 5.5%">
-							<div class="panel panel-default col-xs-offset-3">
+							<div class="panel panel-default col-xs-offset-1">
 								<div class="panel-body" style="background-color: #DDD;">
 									<ul class="rslides" id="slider1"
-										style="border: 2px solid #DDD; background-color: #FFFFFF;">
+										style="border: 2px solid #DDD; background-color: #FFFFFF; height:285px;">
 										<li><img class="img-responsive"
 											src="/cargo/static/img/Pic-1.jpg" alt="Slide 2" />
 											<p class="caption">pic1</p></li>
