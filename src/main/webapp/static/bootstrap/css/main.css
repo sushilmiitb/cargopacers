@@ -132,17 +132,3 @@
 	padding: 10px 12px;
 	pointer-events: none;
 }
-
-.about {
-	float: left;
-	font-size: 30px;
-	background-repeat: no-repeat;
-	width: 310px;
-	min-height: 84px;
-	padding: 0px;
-	margin: 0px 0px 0px 25px;
-	text-indent: 87px;
-	list-style-type: none;
-	line-height: 84px;
-	color: #494949;
-}
