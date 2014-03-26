@@ -5,8 +5,27 @@
 	<tiles:putAttribute name="body">
 		<div class="container-fluid">
 			<div class="row">
+				<div class="col-md-12">
+					<h2 class="page-header text-center">
+						To <strong>ZIP</strong> is to move at high speed
+					</h2>
+					<form class="form-inline col-xs-offset-9" role="form"
+						style="margin-bottom: 15px;" action="track" method="GET"
+						modelAttribute="trackid">
+						<div class="form-group">
+							<input type="text" class="form-control control-label"
+								id="trackid" name="trackid" placeholder="Tracking ID">
+						</div>
+						<button type="submit" class="btn btn-info">Track</button>
+						<c:if test="${not empty '${errormessage}' }">
+							<div>${errormessage}</div>
+						</c:if>
+					</form>
+				</div>
+			</div>
+			<div class="row">
 				<div class="col-md-6">
-					<div class="pad" style="margin-top: 11%">
+					<div class="pad" style="margin-top: 6%">
 						<div class="panel panel-info">
 							<div class="text-center panel-heading">Full Truck Load</div>
 							<form class="form-horizontal panel-body text-center" role="form"
@@ -53,34 +72,26 @@
 					</div>
 				</div>
 				<div class="col-md-6">
-					<form class="form-inline col-xs-offset-7" role="form"
-						style="margin-bottom: 15px;" action="track" method="GET" modelAttribute="trackid">
-						<div class="form-group">
-							<input type="text" class="form-control control-label"
-								id="trackid" name="trackid" placeholder="Tracking ID">
-						</div>
-						<button type="submit" class="btn btn-info">Track</button>
-						<c:if test="${not empty '${errormessage}' }">
-						<div>${errormessage}</div>
-						</c:if>
-					</form>
 					<div style="margin-top: 5.5%">
 						<div class="pad" style="margin-top: 5.5%">
 							<div class="panel panel-default col-xs-offset-1">
-								<div class="panel-body" style="background-color: #DDD;">
-									<ul class="rslides" id="slider1"
-										style="border: 2px solid #DDD; background-color: #FFFFFF; height:285px;">
-										<li><img class="img-responsive"
-											src="/cargo/static/img/Pic-1.jpg" alt="Slide 2" />
-											<p class="caption">pic1</p></li>
-										<li><img class="img-responsive"
-											src="/cargo/static/img/Pic-2 Tailored-Solutions.jpg"
-											alt="Slide 3" />
-											<p class="caption">pic2</p></li>
-										<li><img class="img-responsive"
-											src="/cargo/static/img/Pic-3.jpg" alt="Slide 4" />
-											<p class="caption">pic3</p></li>
-									</ul>
+								<div class="panel-body"
+									style="background-color: #DDD; height: 317px;">
+									<div class="callbacks_container">
+										<ul class="rslides" id="slider1"
+											style="border: 2px solid #DDD; background-color: #FFFFFF; height: 285px;">
+											<li><img class="img-responsive"
+												src="/cargo/static/img/Pic-1.jpg" alt="Slide 2" />
+												<p class="caption">pic1</p></li>
+											<li><img class="img-responsive"
+												src="/cargo/static/img/Pic-2 Tailored-Solutions.jpg"
+												alt="Slide 3" />
+												<p class="caption">pic2</p></li>
+											<li><img class="img-responsive"
+												src="/cargo/static/img/Pic-3.jpg" alt="Slide 4" />
+												<p class="caption">pic3</p></li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</div>
