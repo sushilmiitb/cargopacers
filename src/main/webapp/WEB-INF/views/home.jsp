@@ -1,4 +1,5 @@
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <tiles:insertDefinition name="homepage">
 	<tiles:putAttribute name="body">
@@ -46,12 +47,15 @@
 				</div>
 				<div class="col-md-6">
 					<form class="form-inline col-xs-offset-6" role="form"
-						style="margin-bottom: 15px;">
+						style="margin-bottom: 15px;" action="track" method="GET" modelAttribute="trackid">
 						<div class="form-group">
 							<input type="text" class="form-control control-label"
-								id="exampleInputEmail2" placeholder="Tracking ID">
+								id="trackid" name="trackid" placeholder="Tracking ID">
 						</div>
 						<button type="submit" class="btn btn-info">Track</button>
+						<c:if test="${not empty '${errormessage}' }">
+						<div>${errormessage}</div>
+						</c:if>
 					</form>
 					<div style="margin-top: 5.5%">
 						<div class="pad" style="margin-top: 5.5%">

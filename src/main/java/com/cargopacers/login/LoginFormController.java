@@ -1,5 +1,15 @@
 package com.cargopacers.login;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.authority.AuthorityUtils;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,32 +25,42 @@ public class LoginFormController {
   
 
   Login mLoginDetails = new Login();
+//  @Autowired
+//  private AuthenticationSuccessHandler mAuthenticationHandler;
+//  
+//  @Autowired
+//  private AuthenticationManager mAuthenticationManager; 
     /**
      * This methode will be called when user click submit button
      * @param login login details enter by the user.
      * @return
      */
   @RequestMapping(value = {"/login" }, method = RequestMethod.POST)
-    public ModelAndView onSubmit(@ModelAttribute Login login)
+    public String onSubmit(HttpServletRequest request,HttpServletResponse response,@ModelAttribute Login login)
     {
-    String userName = login.getUser();
-    String userPassword = login.getPassword();
+    String userName = login.getj_username();
+    String userPassword = login.getj_password();
     
         try
         {
           System.out.println("User name:" + userName);
          
           // Dummy check later can be moved to securityContext or can be verified using DB.
-          if(userName.equals("admin") && userPassword.equals("admin"))
+          if(userName.equals(userPassword))
           {
-            return new ModelAndView("shipper", "loginDetails", userName.toString());
+//            Authentication token = new UsernamePasswordAuthenticationToken(userName, userPassword, AuthorityUtils.createAuthorityList("ROLE_USER"));
+//           
+//            Authentication authentication = mAuthenticationManager.authenticate(token);
+//            SecurityContextHolder.getContext().setAuthentication(authentication);
+//            mAuthenticationHandler.onAuthenticationSuccess(request,response, authentication);
+            return "redirect:shipper";
           }
            
         } catch (Exception e) {
             System.out.println("Exception in LoginController "+e.getMessage());
             e.printStackTrace();
-            return new ModelAndView("login", "loginDetails", "exception");
+            return "login";
         }
-        return new ModelAndView("home", "loginDetails", userName.toString());
+        return "";
     }
 }
