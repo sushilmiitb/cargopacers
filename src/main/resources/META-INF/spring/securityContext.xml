@@ -16,7 +16,7 @@
     <intercept-url pattern="/login.jsp*" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
     <intercept-url pattern="/home" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
     <intercept-url pattern="/" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
-    <intercept-url pattern="/**" access="ROLE_USER" />
+    <intercept-url pattern="/**" access="IS_AUTHENTICATED_ANONYMOUSLY" />
     <form-login />
     <logout />
   </http>
