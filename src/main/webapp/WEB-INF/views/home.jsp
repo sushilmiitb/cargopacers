@@ -56,10 +56,10 @@
 										<label for="Date" class="col-sm-4 control-label">Pick-Up
 											Date</label>
 										<div class="col-sm-6">
-											<div class="right-inner-addon">
-												<i class="glyphicon glyphicon-calendar"> </i> <input
-													type="date" class="form-control" id="date"
-													placeholder="date">
+											<div class='input-group date' id='datetimepicker1'>
+												<input type='text' class="form-control" /> <span
+													class="input-group-addon"><span
+													class="glyphicon glyphicon-calendar"></span> </span>
 											</div>
 										</div>
 									</div>

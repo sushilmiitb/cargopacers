@@ -41,6 +41,13 @@ $(window).load(function(){
 )});
   
   
+$(document).ready(function () {
+    $('#datetimepicker1').datetimepicker({
+        pickTime: false,
+		showToday: true,
+		minDate: moment()
+    });
+});
 
 
 
