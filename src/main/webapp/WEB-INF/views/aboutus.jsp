@@ -33,20 +33,20 @@
 						</h2>
 						<div class="well well-lg">
 							<p>
-								ZIP<sup>TM</sup> is a full-scale, non-asset based surface
+								CargoBolt<sup>TM</sup> is a full-scale, non-asset based surface
 								logistics provider and freight forwarder in western and northern
 								India. Currently, it services full-truck loads of all sizes in
 								Gujarat, Rajasthan, Haryana and Delhi. It offers customized
 								pick-up and delivery services to best serve the needs of its
 								various customers. The company specializes in fleet backhaul,
 								using return journeys to transport other customers&apos; loads, thus
-								reducing empty travel. ZIP<sup>TM</sup> follows a strict process
+								reducing empty travel. CargoBolt<sup>TM</sup> follows a strict process
 								of induction of trucks and its drivers. The stringent process of
 								induction is not only confined to truck owners and drivers but
-								also vehicles. ZIP<sup>TM</sup> ensures that all trucks have
+								also vehicles. CargoBolt<sup>TM</sup> ensures that all trucks have
 								valid official documents such as permit, registration
 								certificate and insurance policy before the vehicles are
-								inducted into its service. This ensures that ZIP<sup>TM</sup>
+								inducted into its service. This ensures that CargoBolt<sup>TM</sup>
 								can deliver on its promise of providing guaranteed hassle-free
 								service each time. aranteed proper service? And even after
 								giving the load, do you face major fluctuations in delivery

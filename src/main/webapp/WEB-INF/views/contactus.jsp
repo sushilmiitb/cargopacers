@@ -9,10 +9,10 @@
 					<div class="col-md-6">
 						<div class="col-xs-offset-4">
 							<address>
-								<strong>CARGOPACERS PVT. LTD.</strong><br> Floor 1, CIIE,<br>
+								<strong>CARGOBOLT PVT. LTD.</strong><br> Floor 1, CIIE,<br>
 								IIM Ahmedabad, <br> Ahmedabad,<br> Gujarat<br> <abbr
 									title="Phone">P:</abbr> +91-9825125088<br> <abbr
-									title="email">E:</abbr> <a href="mailto:#">contact@cargopacers.com</a>
+									title="email">E:</abbr> <a href="mailto:#">contact@cargobolt.com</a>
 							</address>
 						</div>
 

@@ -8,7 +8,7 @@
 				<div class="row">
 					<div class="col-md-8">
 						<h2 class="text-right">
-							To <strong>ZIP</strong> is to move at high speed
+							To <strong>Bolt</strong> is to move at high speed
 						</h2>
 					</div>
 					<div class="col-md-4">
