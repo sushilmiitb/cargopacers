@@ -6,13 +6,15 @@
 		<div class="container-fluid">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
-						<h2 class="page-header text-center">
+					<div class="col-md-8">
+						<h2 class="text-right">
 							To <strong>ZIP</strong> is to move at high speed
 						</h2>
-						<form class="form-inline col-xs-offset-9" role="form"
-							style="margin-bottom: 15px;" action="track" method="GET"
-							modelAttribute="trackid">
+					</div>
+					<div class="col-md-4">
+						<form class="form-inline col-xs-offset-4" role="form"
+							style="margin-bottom: 15px; margin-top: 25px;" action="track"
+							method="GET" modelAttribute="trackid">
 							<div class="form-group">
 								<input type="text" class="form-control control-label"
 									id="trackid" name="trackid" placeholder="Tracking ID">
