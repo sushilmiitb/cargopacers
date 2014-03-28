@@ -25,7 +25,9 @@
   <script src="/cargo/static/bootstrap/js/responsiveslides.min.js" type="text/javascript"></script>
   <script src="/cargo/static/bootstrap/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script> 
   <script src="/cargo/static/bootstrap/js/main.js"></script>
-   
+   <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?sensor=false">
+    </script>
   <tiles:insertAttribute name="footer" defaultValue="footer.jsp" />
   </div>
 </body>

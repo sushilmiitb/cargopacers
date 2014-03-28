@@ -49,5 +49,23 @@ $(document).ready(function () {
     });
 });
 
+function initialize()
+{ var myLatlng = new google.maps.LatLng(23.034619, 72.532652);
+	
+var mapOptions = {
+  center: myLatlng,
+  zoom: 15,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+var map=new google.maps.Map(document.getElementById("map-canvas")
+  ,mapOptions);
+  
+  var marker = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title:"ZIP"
+});
+}
 
+google.maps.event.addDomListener(window, 'load', initialize);
 
