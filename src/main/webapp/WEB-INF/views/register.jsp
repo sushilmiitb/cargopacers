@@ -2,7 +2,7 @@
 
 <tiles:insertDefinition name="aboutus">
 	<tiles:putAttribute name="body">
-		<div class="container-fluid" style="padding-top:70px">
+		<div class="container-fluid" style="padding-top: 70px">
 			<div class="row" style="background: #E3E3E3">
 				<div class="col-md-2"></div>
 				<div class="col-md-8">
@@ -30,6 +30,11 @@
 											<label> <input type="checkbox"> Remember me
 											</label>
 										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-offset-4 col-sm-5">
+										<a href="#"> Forgot Password? </a>
 									</div>
 								</div>
 								<div class="form-group">
