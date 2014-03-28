@@ -49,6 +49,10 @@
 								</form>
 							</ul></li>
 						<li><a href="register">Register</a></li>
+						<li><form class="navbar-form navbar-left" role="search">
+        
+        <button type="submit" class="btn btn-default hide">LogOut</button>
+      </form></li>
 					</ul>
 					<script type="text/javascript">
 						var divSelected = null;
