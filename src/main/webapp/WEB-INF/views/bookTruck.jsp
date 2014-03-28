@@ -35,6 +35,11 @@
 			<label>Phone Number</label>
 			<form:input path="toAddress.phoneNumber"/>
 			
+			<form:select path="goodsType">
+				<form:option value="-" label="-- Select type of good"/>
+				<form:options items="${goodsType}" itemValue="typeValue" itemLabel="typeValue" />
+			</form:select>
+			
 			<input type="submit" value="Book Now"/>
 		</form:form>		
 	</tiles:putAttribute>

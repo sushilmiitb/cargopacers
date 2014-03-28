@@ -14,11 +14,18 @@ public class Person extends Party {
   private static final long serialVersionUID = 7331861590248669955L;
   
   public static enum Role {
-    SHIPPER, TRUCKER, SHIPPER_TRUCKER
+    DRIVER, EMPLOYEE, OWNER, ADMIN
   };
   private String firstName;
   private String lastName;
   private char gender;
+  private String idPath;
+  public String getIdPath() {
+    return idPath;
+  }
+  public void setIdPath(String idPath) {
+    this.idPath = idPath;
+  }
   //private Role role;
   public String getFirstName() {
     return firstName;
