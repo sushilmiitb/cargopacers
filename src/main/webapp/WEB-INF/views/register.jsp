@@ -1,6 +1,6 @@
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
 
-<tiles:insertDefinition name="registerpage">
+<tiles:insertDefinition name="aboutus">
 	<tiles:putAttribute name="body">
 		<div class="container-fluid">
 			<div class="row" style="background: #E3E3E3">
