@@ -2,7 +2,7 @@
 
 <tiles:insertDefinition name="homepage">
 	<tiles:putAttribute name="body">
-		<div class="container-fluid">
+		<div class="container-fluid" style="padding-top:70px">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8">

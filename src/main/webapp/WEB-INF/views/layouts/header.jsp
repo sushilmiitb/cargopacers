@@ -1,6 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <div>
-	<nav class="navbar navbar-default" role="navigation">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="container-fluid">
 			<div class="container">
 				<div class="navbar-header">
@@ -21,12 +21,12 @@
 							href="home">Home</a></li>
 						<li id="aboutus"><a href="aboutus"
 							onclick="changeStyle('aboutus','home','contactus','services')">About
-								US</a></li>
+								Us</a></li>
 						<li id="services"><a href="services"
 							onclick="changeStyle('services','home','aboutus','contactus')">Services</a></li>
 						<li id="contactus"><a href="contactus"
 							onclick="changeStyle('contactus','home','aboutus','services')">Contact
-								US</a></li>
+								Us</a></li>
 						<li class=" divider"></li>
 						<li id="login1" onmouseout="closeDropdown('login1')"
 							onmouseover="activeDropdown('login1')" class="dropdown"><a

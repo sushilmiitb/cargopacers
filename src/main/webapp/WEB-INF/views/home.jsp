@@ -3,16 +3,11 @@
 
 <tiles:insertDefinition name="homepage">
 	<tiles:putAttribute name="body">
-		<div class="container-fluid">
+		<div class="container-fluid" style="padding-top: 70px">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8">
-						<h2 class="text-right">
-							To <strong>Bolt</strong> is to move at high speed
-						</h2>
-					</div>
-					<div class="col-md-4">
-						<form class="form-inline col-xs-offset-4" role="form"
+					<div class="col-md-3">
+						<form class="form-inline" role="form"
 							style="margin-bottom: 15px; margin-top: 25px;" action="track"
 							method="GET" modelAttribute="trackid">
 							<div class="form-group">
@@ -25,10 +20,21 @@
 							</c:if>
 						</form>
 					</div>
+					<div class="col-md-6">
+						<h2 class="text-center">
+							To <strong>BOLT</strong> is to move at high speed
+						</h2>
+					</div>
+					<div class="col-md-3">
+						<h3>
+							<span class="glyphicon glyphicon-earphone"></span> <span
+								class="text-right"> <strong>+91-98251-25088 </strong></span>
+						</h3>
+					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-6">
-						<div class="pad" style="margin-top: 6%">
+						<div style="margin-top: 6%">
 							<div class="panel panel-info">
 								<div class="text-center panel-heading">Full Truck Load</div>
 								<form class="form-horizontal panel-body text-center" role="form"
@@ -75,26 +81,27 @@
 						</div>
 					</div>
 					<div class="col-md-6">
-						<div style="margin-top: 5.5%">
-							<div class="pad" style="margin-top: 5.5%">
-								<div class="panel panel-default col-xs-offset-1">
-									<div class="panel-body"
-										style="background-color: #DDD; height: 317px;">
-										<div class="callbacks_container">
-											<ul class="rslides" id="slider1"
-												style="border: 2px solid #DDD; background-color: #FFFFFF; height: 285px;">
+						<div style="margin-top: 6%">
+							<div class="panel panel-default">
+								<div class="panel-body"
+									style="background-color: #DDD;">
+									<div class="callbacks_container">
+										<ul class="rslides" id="slider1"
+											style="border: 2px solid #DDD; background-color: #FFFFFF;">
+											<li><img class="img-responsive"
+												src="/cargo/static/img/1. Next generation trucking provider.jpg" alt="Slide 2" />
+												<p class="caption">Next generation trucking provider</p></li>
+											<li><img class="img-responsive"
+												src="/cargo/static/img/2. Execution at fast speed.jpg"
+												alt="Slide 3" />
+												<p class="caption">Execution at fast speed</p></li>
+											<li><img class="img-responsive"
+												src="/cargo/static/img/3. Seamless Technology.jpg" alt="Slide 4" />
+												<p class="caption">Seamless Technology</p></li>
 												<li><img class="img-responsive"
-													src="/cargo/static/img/Pic-1.jpg" alt="Slide 2" />
-													<p class="caption">pic1</p></li>
-												<li><img class="img-responsive"
-													src="/cargo/static/img/Pic-2 Tailored-Solutions.jpg"
-													alt="Slide 3" />
-													<p class="caption">pic2</p></li>
-												<li><img class="img-responsive"
-													src="/cargo/static/img/Pic-3.jpg" alt="Slide 4" />
-													<p class="caption">pic3</p></li>
-											</ul>
-										</div>
+												src="/cargo/static/img/4. No more sleepless nights (cut the extreme 2 men).jpg" alt="Slide 4" />
+												<p class="caption">No more sleepless nights</p></li>
+										</ul>
 									</div>
 								</div>
 							</div>
@@ -124,46 +131,52 @@
 							</h2>
 						</div>
 						<div class="well well-lg">
-							<ul>
-								<li>
-									<p>Guaranteed delivery times</p>
-								</li>
-								<li>
-									<p>Book a truck in 60 second</p>
-								</li>
-								<li>
-									<p>Online and offline booking</p>
-								</li>
-								<li>
-									<p>Online real-time tracking</p>
-								</li>
-								<li>
-									<p>Customer loyalty rewards</p>
-								</li>
-								<li>
-									<p>Hassle-free billing</p>
-								</li>
+							<ul class="list-unstyled">
+								<li><h5>
+										<img src="/cargo/static/img/accept.png">
+										<span>Guaranteed delivery times</span>
+									</h5></li>
+								<li><h5>
+										<img src="/cargo/static/img/accept.png">
+										<span>Book a truck in 60 second</span>
+									</h5></li>
+								<li><h5>
+										<img src="/cargo/static/img/accept.png">
+										<span>Online and offline booking</span>
+									</h5></li>
+								<li><h5>
+										<img src="/cargo/static/img/accept.png">
+										<span>Online real-time tracking</span>
+									</h5></li>
+								<li><h5>
+										<img src="/cargo/static/img/accept.png">
+										<span>Customer loyalty rewards</span>
+									</h5></li>
+								<li><h5>
+										<img src="/cargo/static/img/accept.png">
+										<span>Hassle-free billing</span>
+									</h5></li>
 							</ul>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="text-center">
 							<h2>
-								<span class="label label-default">video</span>
+								<span class="label label-default">Services</span>
 							</h2>
 						</div>
 						<div class="well well-lg"></div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-4">
+					<!--   <div class="col-md-4">
 						<div class="text-center">
 							<h2>
 								<span class="label label-default">review 1</span>
 							</h2>
 						</div>
 						<div class="well well-lg"></div>
-					</div>
+					</div> 
 					<div class="col-md-4">
 						<div class="text-center">
 							<h2>
@@ -171,7 +184,7 @@
 							</h2>
 						</div>
 						<div class="well well-lg"></div>
-					</div>
+					</div> 
 					<div class="col-md-4">
 						<div class="text-center">
 							<h2>
@@ -179,7 +192,7 @@
 							</h2>
 						</div>
 						<div class="well well-lg"></div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>

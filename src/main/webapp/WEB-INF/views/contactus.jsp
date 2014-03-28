@@ -3,26 +3,9 @@
 
 <tiles:insertDefinition name="homepage">
 	<tiles:putAttribute name="body">
-		<div class="container-fluid">
+		<div class="container-fluid" style="padding-top: 70px">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6">
-						<div class="col-xs-offset-4">
-							<address>
-								<strong>CARGOBOLT PVT. LTD.</strong><br> Floor 1, CIIE,<br>
-								IIM Ahmedabad, <br> Ahmedabad,<br> Gujarat<br> <abbr
-									title="Phone">P:</abbr> +91-9825125088<br> <abbr
-									title="email">E:</abbr> <a href="mailto:#">contact@cargobolt.com</a>
-							</address>
-						</div>
-
-						<div class="panel panel-default">
-							<div class="panel-body">
-								<div id="map-canvas" style="height: 300px"></div>
-							</div>
-						</div>
-
-					</div>
 					<div class="col-md-6">
 						<div class="panel panel-default">
 							<div class="panel panel-heading text-center">Write to Us</div>
@@ -48,24 +31,24 @@
 									<label for="help" class="col-sm-4 control-label">How
 										Can we Help?</label>
 									<div class="col-sm-4">
-										<div class="radio">
+										<div class="radio text-left">
 											<label> <input type="radio" name="optionsRadios"
 												id="shipper" value="shipper" checked> I&apos;m a
 												Shipper
 											</label>
 										</div>
-										<div class="radio">
+										<div class="radio text-left">
 											<label> <input type="radio" name="optionsRadios"
 												id="trucker" value="trucker"> I&apos;m a Trucker
 											</label>
 										</div>
-										<div class="radio">
+										<div class="radio text-left">
 											<label> <input type="radio" name="optionsRadios"
 												id="jobseeker" value="jobseeker"> I&apos;m a Job
 												Seeker
 											</label>
 										</div>
-										<div class="radio">
+										<div class="radio text-left">
 											<label> <input type="radio" name="optionsRadios"
 												id="others" value="others"> Others
 											</label>
@@ -116,6 +99,23 @@
 
 							</form>
 						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="text-left">
+							<address>
+								<strong>CargoBolt Logistics Pvt. Ltd.</strong><br> Ideapad,
+								CIIE Building,<br> IIM Ahmedabad, <br> Ahmedabad,<br>
+								Gujarat<br> <abbr title="Phone">P:</abbr> +91-9825125088<br>
+								<abbr title="email">E:</abbr> <a href="mailto:#">shaunak.chhaparia@gmail.com</a>
+							</address>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<div id="map-canvas" style="height: 300px"></div>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>

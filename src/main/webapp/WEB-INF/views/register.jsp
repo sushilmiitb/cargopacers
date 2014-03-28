@@ -2,7 +2,7 @@
 
 <tiles:insertDefinition name="aboutus">
 	<tiles:putAttribute name="body">
-		<div class="container-fluid">
+		<div class="container-fluid" style="padding-top:70px">
 			<div class="row" style="background: #E3E3E3">
 				<div class="col-md-2"></div>
 				<div class="col-md-8">
@@ -39,7 +39,7 @@
 								</div>
 							</form>
 							<div class="rule"></div>
-							<div class="title">Don't Have Account? Register Here</div>
+							<div class="title">Don't Have an Account? Register Here</div>
 							<form class="form-horizontal" role="form">
 								<div class="form-group">
 									<label for="inputfirstname" class="col-sm-4 control-label">First

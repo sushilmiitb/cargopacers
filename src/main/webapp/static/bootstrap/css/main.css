@@ -54,15 +54,12 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-	height: 223px;
 }
 
 .callbacks img {
 	display: block;
 	position: relative;
 	z-index: 1;
-	height: 270px;
-	width: 380px;
 	border: 0;
 }
 
@@ -77,7 +74,7 @@
 	background: rgba(0,0,0, .8);
 	left: 0;
 	right: 0;
-	bottom: -25.5%;
+	bottom: -0.1%;
 	padding: 1px 20px;
 	margin: 0;
 	max-width: none;
@@ -104,5 +101,5 @@
 
 .callbacks_nav.next {
 	background-position: right top;
-	right: 48px;
+	right: 34px;
 }
