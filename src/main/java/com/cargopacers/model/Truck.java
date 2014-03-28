@@ -18,28 +18,72 @@ import org.springframework.data.annotation.LastModifiedDate;
 @Entity
 public class Truck implements Serializable {
   private static final long serialVersionUID = -4964348096061987796L;
-  public static enum Type {
-    NINE_TON,
-    TEN_TON,
-    FIFTEEN_TON
-  };
   
   @Id
   @GeneratedValue
   private Long id;
-  private String make;
+  private Types genericType;
+  private String makeCompany;
   private String model;
-  private String number;
+  private String registrationNumber;
+  private Long lengthFeet;
+  private Long heightFeet;
+  private Long widthFeet;
+  private String rcFileLocation;
+  private String insuranceFileLocation;
   
+  public String getRcFileLocation() {
+    return rcFileLocation;
+  }
+  public void setRcFileLocation(String rcFileLocation) {
+    this.rcFileLocation = rcFileLocation;
+  }
+  public String getInsuranceFileLocation() {
+    return insuranceFileLocation;
+  }
+  public void setInsuranceFileLocation(String insuranceFileLocation) {
+    this.insuranceFileLocation = insuranceFileLocation;
+  }
   @CreatedDate
   private Date createdAt;
   @LastModifiedDate
   private Date updatedAt;
-  public String getMake() {
-    return make;
+ 
+  public Types getGenericType() {
+    return genericType;
   }
-  public void setMake(String make) {
-    this.make = make;
+  public void setGenericType(Types genericType) {
+    this.genericType = genericType;
+  }
+  public String getMakeCompany() {
+    return makeCompany;
+  }
+  public void setMakeCompany(String makeCompany) {
+    this.makeCompany = makeCompany;
+  }
+  public String getRegistrationNumber() {
+    return registrationNumber;
+  }
+  public void setRegistrationNumber(String registrationNumber) {
+    this.registrationNumber = registrationNumber;
+  }
+  public Long getLengthFeet() {
+    return lengthFeet;
+  }
+  public void setLengthFeet(Long lengthFeet) {
+    this.lengthFeet = lengthFeet;
+  }
+  public Long getHeightFeet() {
+    return heightFeet;
+  }
+  public void setHeightFeet(Long heightFeet) {
+    this.heightFeet = heightFeet;
+  }
+  public Long getWidthFeet() {
+    return widthFeet;
+  }
+  public void setWidthFeet(Long widthFeet) {
+    this.widthFeet = widthFeet;
   }
   public String getModel() {
     return model;
@@ -47,12 +91,7 @@ public class Truck implements Serializable {
   public void setModel(String model) {
     this.model = model;
   }
-  public String getNumber() {
-    return number;
-  }
-  public void setNumber(String number) {
-    this.number = number;
-  }
+  
   public Long getId() {
     return id;
   }
@@ -66,7 +105,7 @@ public class Truck implements Serializable {
   public int hashCode() {
     final int prime = 31;
     int result = 1;
-    result = prime * result + ((number == null) ? 0 : number.hashCode());
+    result = prime * result + ((registrationNumber == null) ? 0 : registrationNumber.hashCode());
     return result;
   }
   @Override
@@ -78,10 +117,10 @@ public class Truck implements Serializable {
     if (getClass() != obj.getClass())
       return false;
     Truck other = (Truck) obj;
-    if (number == null) {
-      if (other.number != null)
+    if (registrationNumber == null) {
+      if (other.registrationNumber != null)
         return false;
-    } else if (!number.equals(other.number))
+    } else if (!registrationNumber.equals(other.registrationNumber))
       return false;
     return true;
   }

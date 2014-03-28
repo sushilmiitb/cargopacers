@@ -54,9 +54,9 @@ public class Order implements Serializable {
     @AttributeOverride(name="phoneNumber", column=@Column(name="toAddressPhoneNumber"))
 })
   private OrderAddress toAddress;
-  private Truck.Type truckType;
-  private GoodsType goodsType;
-  private InsuranceType insuranceType;
+  private String goodsType;
+  private String insuranceType;
+  
   @ManyToOne
   @JoinColumn(name="truck_id")
   private Truck truck;
@@ -88,22 +88,16 @@ public class Order implements Serializable {
   public void setToAddress(OrderAddress toAddress) {
     this.toAddress = toAddress;
   }
-  public Truck.Type getTruckType() {
-    return truckType;
-  }
-  public void setTruckType(Truck.Type truckType) {
-    this.truckType = truckType;
-  }
-  public GoodsType getGoodsType() {
+  public String getGoodsType() {
     return goodsType;
   }
-  public void setGoodsType(GoodsType goodsType) {
+  public void setGoodsType(String goodsType) {
     this.goodsType = goodsType;
   }
-  public InsuranceType getInsuranceType() {
+  public String getInsuranceType() {
     return insuranceType;
   }
-  public void setInsuranceType(InsuranceType insuranceType) {
+  public void setInsuranceType(String insuranceType) {
     this.insuranceType = insuranceType;
   }
   public Truck getTruck() {

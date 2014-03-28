@@ -8,17 +8,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.cargopacers.model.Order;
-import com.cargopacers.repository.OrderRepository;
+import com.cargopacers.service.ShipperService;
 
 
 @Controller
 public class ShipperController {
-  private OrderRepository orderRepository;
-  
   @Autowired
-  ShipperController(OrderRepository orderRepository){
-    this.orderRepository = orderRepository;
-  }
+  private ShipperService shipperService;
   
   @RequestMapping(value={"/shipper"}, method = RequestMethod.GET)
   public String shipper(){
@@ -27,14 +23,13 @@ public class ShipperController {
   
   @RequestMapping(value={"/shipper/bookTruck"}, method = RequestMethod.GET)
   public String bookTruck(Model  m){
-    Order order = new Order();
-    m.addAttribute("order", order);
+    shipperService.getBookTruckFormModel(m);
     return "bookTruck";
   }
   
   @RequestMapping(value={"/shipper/bookTruck"}, method = RequestMethod.POST)
   public String bookTruck(@ModelAttribute Order order){
-    orderRepository.save(order);
+    shipperService.saveBookTruckForm(order);
     return "home";
   }
 }
