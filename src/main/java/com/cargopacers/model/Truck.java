@@ -6,6 +6,8 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
@@ -22,13 +24,7 @@ public class Truck implements Serializable {
   @Id
   @GeneratedValue
   private Long id;
-  private Types genericType;
-  private String makeCompany;
-  private String model;
   private String registrationNumber;
-  private Long lengthFeet;
-  private Long heightFeet;
-  private Long widthFeet;
   private String rcFileLocation;
   private String insuranceFileLocation;
   
@@ -49,49 +45,12 @@ public class Truck implements Serializable {
   @LastModifiedDate
   private Date updatedAt;
  
-  public Types getGenericType() {
-    return genericType;
-  }
-  public void setGenericType(Types genericType) {
-    this.genericType = genericType;
-  }
-  public String getMakeCompany() {
-    return makeCompany;
-  }
-  public void setMakeCompany(String makeCompany) {
-    this.makeCompany = makeCompany;
-  }
   public String getRegistrationNumber() {
     return registrationNumber;
   }
   public void setRegistrationNumber(String registrationNumber) {
     this.registrationNumber = registrationNumber;
-  }
-  public Long getLengthFeet() {
-    return lengthFeet;
-  }
-  public void setLengthFeet(Long lengthFeet) {
-    this.lengthFeet = lengthFeet;
-  }
-  public Long getHeightFeet() {
-    return heightFeet;
-  }
-  public void setHeightFeet(Long heightFeet) {
-    this.heightFeet = heightFeet;
-  }
-  public Long getWidthFeet() {
-    return widthFeet;
-  }
-  public void setWidthFeet(Long widthFeet) {
-    this.widthFeet = widthFeet;
-  }
-  public String getModel() {
-    return model;
-  }
-  public void setModel(String model) {
-    this.model = model;
-  }
-  
+  }  
   public Long getId() {
     return id;
   }
@@ -101,6 +60,11 @@ public class Truck implements Serializable {
   public Date getUpdatedAt() {
     return updatedAt;
   }
+  
+  @ManyToOne
+  @JoinColumn(name="model_id")
+  private TruckModel truckModel;
+  
   @Override
   public int hashCode() {
     final int prime = 31;

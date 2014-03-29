@@ -54,8 +54,84 @@ public class Order implements Serializable {
     @AttributeOverride(name="phoneNumber", column=@Column(name="toAddressPhoneNumber"))
 })
   private OrderAddress toAddress;
-  private String goodsType;
+  
+  private String goodsTypeSpecificName;
   private String insuranceType;
+  /**
+   * Following fields will be used to take preference of the user for trucks
+   * while ordering it.
+   */
+  private String makeCompany;
+  private String modelNumber;
+  private String genericType; //what is particular type of truck commonly called as
+  private String numberOfWheels;
+  private Long lengthFeet;
+  private Long heightFeet;
+  private Long widthFeet;
+  private Long gwt; //gross weight tonnage
+  private Long permittedTonnage; //weight that is permitted for truck to carry
+  private Long chassisType;
+  
+  public String getMakeCompany() {
+    return makeCompany;
+  }
+  public void setMakeCompany(String makeCompany) {
+    this.makeCompany = makeCompany;
+  }
+  public String getModelNumber() {
+    return modelNumber;
+  }
+  public void setModelNumber(String modelNumber) {
+    this.modelNumber = modelNumber;
+  }
+  public String getGenericType() {
+    return genericType;
+  }
+  public void setGenericType(String genericType) {
+    this.genericType = genericType;
+  }
+  public String getNumberOfWheels() {
+    return numberOfWheels;
+  }
+  public void setNumberOfWheels(String numberOfWheels) {
+    this.numberOfWheels = numberOfWheels;
+  }
+  public Long getLengthFeet() {
+    return lengthFeet;
+  }
+  public void setLengthFeet(Long lengthFeet) {
+    this.lengthFeet = lengthFeet;
+  }
+  public Long getHeightFeet() {
+    return heightFeet;
+  }
+  public void setHeightFeet(Long heightFeet) {
+    this.heightFeet = heightFeet;
+  }
+  public Long getWidthFeet() {
+    return widthFeet;
+  }
+  public void setWidthFeet(Long widthFeet) {
+    this.widthFeet = widthFeet;
+  }
+  public Long getGwt() {
+    return gwt;
+  }
+  public void setGwt(Long gwt) {
+    this.gwt = gwt;
+  }
+  public Long getPermittedTonnage() {
+    return permittedTonnage;
+  }
+  public void setPermittedTonnage(Long permittedTonnage) {
+    this.permittedTonnage = permittedTonnage;
+  }
+  public Long getChassisType() {
+    return chassisType;
+  }
+  public void setChassisType(Long chassisType) {
+    this.chassisType = chassisType;
+  }
   
   @ManyToOne
   @JoinColumn(name="truck_id")
@@ -88,11 +164,11 @@ public class Order implements Serializable {
   public void setToAddress(OrderAddress toAddress) {
     this.toAddress = toAddress;
   }
-  public String getGoodsType() {
-    return goodsType;
+  public String getGoodsTypeSpecificName() {
+    return goodsTypeSpecificName;
   }
-  public void setGoodsType(String goodsType) {
-    this.goodsType = goodsType;
+  public void setGoodsTypeSpecificName(String goodsTypeSpecificName) {
+    this.goodsTypeSpecificName = goodsTypeSpecificName;
   }
   public String getInsuranceType() {
     return insuranceType;
