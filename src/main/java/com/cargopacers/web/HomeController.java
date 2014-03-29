@@ -13,6 +13,7 @@ import com.cargopacers.model.ContactUs;
 import com.cargopacers.model.Order;
 import com.cargopacers.service.ContactUsService;
 import com.cargopacers.service.ShipperService;
+import com.cargopacers.service.UserRegistrationService;
 
 @Controller
 public class HomeController {
@@ -21,6 +22,8 @@ public class HomeController {
   ContactUsService contactUsService;
   @Autowired
   ShipperService shipperService;
+  @Autowired
+  UserRegistrationService userRegistrationService;
 
   @RequestMapping(value = { "/", "/home" }, method = RequestMethod.GET)
   public String home(Model m) {
@@ -69,4 +72,12 @@ public class HomeController {
     return "register";
   }
 
+  @RequestMapping(value = { "/register-bookTruck" }, method = RequestMethod.GET)
+  public String registerbookTruck(Model m) {
+    shipperService.getBookTruckFromHome(m);
+    userRegistrationService.getRegistrationDetailsFromModel(m);
+    return "register-bookTruck";
+  }
+  
+  
 }
