@@ -10,22 +10,24 @@
 							class="icon-bar"></span><span class="icon-bar"></span><span
 							class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">CargoBolt</a>
+					<a class="navbar-brand" href="home"
+					onclick="changeStyle('home','aboutus','services','contactus','register')">
+					CargoBolt</a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse"
 					id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="active" id="home"
-							onclick="changeStyle('home','aboutus','services','contactus')"><a
+							onclick="changeStyle('home','aboutus','services','contactus','register')"><a
 							href="home">Home</a></li>
 						<li id="aboutus"><a href="aboutus"
-							onclick="changeStyle('aboutus','home','contactus','services')">About
+							onclick="changeStyle('aboutus','home','contactus','services','register')">About
 								Us</a></li>
 						<li id="services"><a href="services"
-							onclick="changeStyle('services','home','aboutus','contactus')">Services</a></li>
+							onclick="changeStyle('services','home','aboutus','contactus','register')">Services</a></li>
 						<li id="contactus"><a href="contactus"
-							onclick="changeStyle('contactus','home','aboutus','services')">Contact
+							onclick="changeStyle('contactus','home','aboutus','services','register')">Contact
 								Us</a></li>
 						<li class=" divider"></li>
 						<li id="login1" onmouseout="closeDropdown('login1')"
@@ -48,7 +50,8 @@
 										type="submit" name="commit" value="Sign In" />
 								</form>
 							</ul></li>
-						<li><a href="register">Register</a></li>
+						<li id="register"><a href="register" 
+						onclick="changeStyle('register','services','home','aboutus','contactus')">Register</a></li>
 						<li><form class="navbar-form navbar-left" role="search">
         
         <button type="submit" class="btn btn-default hide">LogOut</button>
@@ -62,21 +65,32 @@
 							document.getElementById('home').className = '';
 							document.getElementById('services').className = '';
 							document.getElementById('contactus').className = '';
+							document.getElementById('register').className = '';
 						} else if (pathname == "/cargo/home") {
 							document.getElementById('home').className = 'active';
 							document.getElementById('aboutus').className = '';
 							document.getElementById('services').className = '';
 							document.getElementById('contactus').className = '';
+							document.getElementById('register').className = '';
 						} else if (pathname == "/cargo/services") {
 							document.getElementById('services').className = 'active';
 							document.getElementById('aboutus').className = '';
 							document.getElementById('home').className = '';
 							document.getElementById('contactus').className = '';
+							document.getElementById('register').className = '';
 						} else if (pathname == "/cargo/contactus") {
 							document.getElementById('contactus').className = 'active';
 							document.getElementById('aboutus').className = '';
 							document.getElementById('services').className = '';
 							document.getElementById('home').className = '';
+							document.getElementById('register').className = '';
+						}
+						else if (pathname == "/cargo/register") {
+							document.getElementById('register').className = 'active';
+							document.getElementById('aboutus').className = '';
+							document.getElementById('services').className = '';
+							document.getElementById('home').className = '';
+							document.getElementById('contactus').className = '';
 						}
 					</script>
 				</div>

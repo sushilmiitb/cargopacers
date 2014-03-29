@@ -1,6 +1,6 @@
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
 
-<tiles:insertDefinition name="homepage">
+<tiles:insertDefinition name="services">
 	<tiles:putAttribute name="body">
 		<div class="container-fluid" style="padding-top:70px">
 			<div class="container">

@@ -8,21 +8,32 @@
 <put-attribute name="header" value="/WEB-INF/views/layouts/header.jsp" />
 </definition>
  <definition name="homepage" extends="header"   template="/WEB-INF/views/layouts/main.jsp">
-    <put-attribute name="title" value="Cargo Pacers Home Page" />
+    <put-attribute name="title" value="CargoBolt Home Page" />
     <put-attribute name="footer" value="/WEB-INF/views/layouts/footer.jsp" />
  </definition>
   <definition name="aboutus" extends="header" template="/WEB-INF/views/layouts/main.jsp">
-    <put-attribute name="title" value="Cargo Pacers AboutUs Page" />
+    <put-attribute name="title" value="CargoBolt AboutUs Page" />
     <put-attribute name="footer" value="/WEB-INF/views/layouts/footer.jsp" />
   </definition>
-  
+   <definition name="register" extends="header" template="/WEB-INF/views/layouts/main.jsp">
+    <put-attribute name="title" value="CargoBolt AboutUs Page" />
+    <put-attribute name="footer" value="/WEB-INF/views/layouts/footer.jsp" />
+  </definition>
+   <definition name="services" extends="header" template="/WEB-INF/views/layouts/main.jsp">
+    <put-attribute name="title" value="CargoBolt Services Page" />
+    <put-attribute name="footer" value="/WEB-INF/views/layouts/footer.jsp" />
+  </definition>
+  <definition name="contactus" extends="header" template="/WEB-INF/views/layouts/main.jsp">
+    <put-attribute name="title" value="CargoBolt Contactus Page" />
+    <put-attribute name="footer" value="/WEB-INF/views/layouts/footer.jsp" />
+  </definition>
    <definition name="loginpage" extends="header" template="/WEB-INF/views/layouts/main.jsp">
-    <put-attribute name="title" value="Cargo Pacers AboutUs Page" />
+    <put-attribute name="title" value="CargoBolt Login Page" />
     <put-attribute name="footer" value="/WEB-INF/views/layouts/footer.jsp" />
   </definition>
 
   <definition name="shipperHome" template="/WEB-INF/views/layouts/shipperMain.jsp">
-  	<put-attribute name="title" value="Cargo Pacers Home Page" />
+  	<put-attribute name="title" value="CargoBolt ShipperHome Page" />
     <put-attribute name="header" value="/WEB-INF/views/layouts/header.jsp" />
     <put-attribute name="shipperMenu" value="/WEB-INF/views/layouts/shipperMenu.jsp" />
     <put-attribute name="footer" value="/WEB-INF/views/layouts/footer.jsp" />
