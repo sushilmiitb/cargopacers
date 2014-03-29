@@ -21,9 +21,8 @@
 						</form>
 					</div>
 					<div class="col-md-6">
-						<h2 class="text-center">
-							To <strong>BOLT</strong> is to move at high speed
-						</h2>
+						<h2 class="text-center">A hi-tech, reliable and easy way to
+							move cargo in trucks.</h2>
 					</div>
 					<div class="col-md-3">
 						<h3>
@@ -83,23 +82,25 @@
 					<div class="col-md-6">
 						<div style="margin-top: 6%">
 							<div class="panel panel-default">
-								<div class="panel-body"
-									style="background-color: #DDD;">
+								<div class="panel-body" style="background-color: #DDD;">
 									<div class="callbacks_container">
 										<ul class="rslides" id="slider1"
 											style="border: 2px solid #DDD; background-color: #FFFFFF;">
 											<li><img class="img-responsive"
-												src="/cargo/static/img/1. Next generation trucking provider.jpg" alt="Slide 2" />
+												src="/cargo/static/img/1. Next generation trucking provider.jpg"
+												alt="Slide 2" />
 												<p class="caption">Next generation trucking provider</p></li>
 											<li><img class="img-responsive"
 												src="/cargo/static/img/2. Execution at fast speed.jpg"
 												alt="Slide 3" />
 												<p class="caption">Execution at fast speed</p></li>
 											<li><img class="img-responsive"
-												src="/cargo/static/img/3. Seamless Technology.jpg" alt="Slide 4" />
+												src="/cargo/static/img/3. Seamless Technology.jpg"
+												alt="Slide 4" />
 												<p class="caption">Seamless Technology</p></li>
-												<li><img class="img-responsive"
-												src="/cargo/static/img/4. No more sleepless nights (cut the extreme 2 men).jpg" alt="Slide 4" />
+											<li><img class="img-responsive"
+												src="/cargo/static/img/4. No more sleepless nights (cut the extreme 2 men).jpg"
+												alt="Slide 4" />
 												<p class="caption">No more sleepless nights</p></li>
 										</ul>
 									</div>
@@ -112,49 +113,60 @@
 					<div class="col-md-4">
 						<div class="text-center">
 							<h2>
-								<span class="label label-default">who are we?</span>
+								<span class="label label-info">who are we?</span>
 							</h2>
 						</div>
-						<div class="well well-lg">
-							<p>We are a group of IIM and IIT graduates building the next
-								generation solution for moving goods. Currently, we offer
-								full-truck load movement in all sizes across Gujarat, Rajasthan,
-								Haryana and Delhi. We use state of the art technologies and are
-								learning every day. When we promise something, we deliver it. No
-								excuses.</p>
+						<div class="panel panel-info panel-body">
+							<ul class="list-unstyled">
+								<li><p>
+										<img src="/cargo/static/img/accept.png"> <span>We
+											are a group of IIM and IIT graduates building the next
+											generation solution for moving goods. We envision to bring
+											the same level of efficiency in cargo movement that people
+											expect for their own movement in flights. We use state of the
+											art technologies and are learning every day. When we promise
+											something, we deliver it. No excuses.</span>
+									</p></li>
+								<li><p>
+										<img src="/cargo/static/img/accept.png"> <span>We
+											would be happy to understand your trucking needs and look
+											forward to serving you. Please &ldquo;Contact Us&rdquo; and
+											we&apos;ll get back to you.</span>
+									</p></li>
+							</ul>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="text-center">
 							<h2>
-								<span class="label label-default">why choose us?</span>
+								<span class="label label-info">why choose us?</span>
 							</h2>
 						</div>
-						<div class="well well-lg">
+						<div class="panel panel-info panel-body">
 							<ul class="list-unstyled">
 								<li><h5>
-										<img src="/cargo/static/img/accept.png">
-										<span>Guaranteed delivery times</span>
+										<img src="/cargo/static/img/accept.png"> <span>Guaranteed
+											delivery times</span>
 									</h5></li>
 								<li><h5>
-										<img src="/cargo/static/img/accept.png">
-										<span>Book a truck in 60 second</span>
+										<img src="/cargo/static/img/accept.png"> <span>Book
+											a truck in 60 seconds</span>
 									</h5></li>
 								<li><h5>
-										<img src="/cargo/static/img/accept.png">
-										<span>Online and offline booking</span>
+										<img src="/cargo/static/img/accept.png"> <span>Online
+											and offline booking</span>
 									</h5></li>
 								<li><h5>
-										<img src="/cargo/static/img/accept.png">
-										<span>Online real-time tracking</span>
+										<img src="/cargo/static/img/accept.png"> <span>Online
+											real-time tracking</span>
 									</h5></li>
 								<li><h5>
-										<img src="/cargo/static/img/accept.png">
-										<span>Customer loyalty rewards</span>
+										<img src="/cargo/static/img/accept.png"> <span>Customer
+											loyalty rewards</span>
 									</h5></li>
 								<li><h5>
-										<img src="/cargo/static/img/accept.png">
-										<span>Hassle-free billing</span>
+										<img src="/cargo/static/img/accept.png"> <span>Hassle-free
+											billing</span>
 									</h5></li>
 							</ul>
 						</div>
@@ -162,10 +174,10 @@
 					<div class="col-md-4">
 						<div class="text-center">
 							<h2>
-								<span class="label label-default">Services</span>
+								<span class="label label-info">Services</span>
 							</h2>
 						</div>
-						<div class="well well-lg"></div>
+						<div class="panel panel-info panel-body"></div>
 					</div>
 				</div>
 				<div class="row">

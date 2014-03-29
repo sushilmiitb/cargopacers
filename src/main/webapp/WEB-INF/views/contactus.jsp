@@ -7,7 +7,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<div class="panel panel-default">
+						<div class="panel panel-info">
 							<div class="panel panel-heading text-center">Write to Us</div>
 							<form class="form-horizontal panel-body text-center" role="form"
 								style="">
@@ -106,7 +106,7 @@
 								<strong>CargoBolt Logistics Pvt. Ltd.</strong><br> Ideapad,
 								CIIE Building,<br> IIM Ahmedabad, <br> Ahmedabad,<br>
 								Gujarat<br> <abbr title="Phone">P:</abbr> +91-9825125088<br>
-								<abbr title="email">E:</abbr> <a href="mailto:#">shaunak.chhaparia@gmail.com</a>
+								<abbr title="email">E:</abbr> <a href="mailto:#">cargobolt@gmail.com</a>
 							</address>
 						</div>
 
