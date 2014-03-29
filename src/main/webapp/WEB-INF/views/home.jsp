@@ -177,7 +177,17 @@
 								<span class="label label-info">Services</span>
 							</h2>
 						</div>
-						<div class="panel panel-info panel-body"></div>
+						<div class="panel panel-info panel-body">
+							<p>For a manufacturer or a wholesaler, CargoBolt is a
+								one-stop solution for all trucking needs. Currently, we service
+								full-truck loads of all sizes in Gujarat, Rajasthan, Haryana and
+								Delhi. We offer customized pick-up and delivery services to best
+								serve the needs of our various customers.</p>
+							<p>Once you are registered with us, you can book trucks both
+								online and offline. We provide 100% reliable cargo movement and
+								unbeatable execution. &ldquo;Register&rdquo; here to get
+								started.</p>
+						</div>
 					</div>
 				</div>
 				<div class="row">
