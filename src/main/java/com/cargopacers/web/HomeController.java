@@ -29,11 +29,6 @@ public class HomeController {
     return "services";
   }
   
-  @RequestMapping(value = { "/register" }, method = RequestMethod.GET)
-  public String register() {
-    return "register";
-  }
-  
   @RequestMapping(value = { "/track" }, method = RequestMethod.GET)
   public String tracking(@RequestParam("trackid")String trackId,ModelMap model){
     

@@ -16,7 +16,7 @@
     <put-attribute name="footer" value="/WEB-INF/views/layouts/footer.jsp" />
   </definition>
    <definition name="register" extends="header" template="/WEB-INF/views/layouts/main.jsp">
-    <put-attribute name="title" value="CargoBolt AboutUs Page" />
+    <put-attribute name="title" value="CargoBolt Register Page" />
     <put-attribute name="footer" value="/WEB-INF/views/layouts/footer.jsp" />
   </definition>
    <definition name="services" extends="header" template="/WEB-INF/views/layouts/main.jsp">

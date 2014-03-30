@@ -1,4 +1,6 @@
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <tiles:insertDefinition name="register">
 	<tiles:putAttribute name="body">
@@ -45,57 +47,57 @@
 							</form>
 							<div class="rule"></div>
 							<div class="title">Don't Have an Account? Register Here</div>
-							<form class="form-horizontal" role="form">
+							<form action="success" method="POST" id="userregistrationform" modelAttribute="userregistration" class="form-horizontal" role="form">
 								<div class="form-group">
 									<label for="inputfirstname" class="col-sm-4 control-label">First
 										Name</label>
 									<div class="col-sm-5">
-										<input type="text" class="form-control" id="inputfirstname"
-											placeholder="First Name">
+										<form:input path="userregistration.firstname" type="text" class="form-control" id="inputfirstname"
+											placeholder="First Name"/>
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="inputfirstname" class="col-sm-4 control-label">Last
 										Name</label>
 									<div class="col-sm-5">
-										<input type="text" class="form-control" id="inputlastname"
-											placeholder="Last Name">
+										<form:input path="userregistration.lastname" type="text" class="form-control" id="inputlastname"
+											placeholder="Last Name"/>
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="inputcompanyname" class="col-sm-4 control-label">Company
 										Name</label>
 									<div class="col-sm-5">
-										<input type="email" class="form-control" id="inputcompanyname"
-											placeholder="Campany Name">
+										<form:input path="userregistration.companyname" type="text" class="form-control" id="inputcompanyname"
+											placeholder="Campany Name"/>
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="inputEmail3" class="col-sm-4 control-label">Email</label>
 									<div class="col-sm-5">
-										<input type="email" class="form-control" id="inputEmail3"
-											placeholder="Email">
+										<form:input path="userregistration.emailid" type="email" class="form-control" id="inputEmail3"
+											placeholder="Email"/>
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="inputpassword" class="col-sm-4 control-label">Password</label>
 									<div class="col-sm-5">
-										<input type="password" class="form-control" id="inputpassword"
-											placeholder="Password">
+										<form:input path="userregistration.password" type="password" class="form-control" id="inputpassword"
+											placeholder="Password"/>
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="inputphone" class="col-sm-4 control-label">Phone
 										Number</label>
 									<div class="col-sm-5">
-										<input type="text" class="form-control" id="inputphone"
-											placeholder="Phane Number">
+										<form:input path="userregistration.phonenumber" type="text" class="form-control" id="inputphone"
+											placeholder="Phane Number"/>
 									</div>
 								</div>
 								<div class="form-group">
 									<div class="col-sm-offset-4 col-sm-5">
 										<div class="checkbox">
-											<label> <input type="checkbox"> Remember me
+											<label> <form:checkbox path="userregistration.isrememberme" value="remember"/> Remember me
 											</label>
 										</div>
 									</div>
