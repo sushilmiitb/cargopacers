@@ -14,6 +14,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="/cargo/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/cargo/static/bootstrap/css/bootstrap-datetimepicker.min.css">
+<link href="/cargo/static/bootstrap/css/responsiveslides.css" rel="stylesheet">
+<link href="/cargo/static/bootstrap/css/main.css" rel="stylesheet">
 <tiles:insertAttribute name="head" defaultValue="" />
 </head>
 <body>
@@ -22,9 +25,16 @@
   			<tiles:insertAttribute name="shipperMenu" />
   			<tiles:insertAttribute name="body" />
   	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  	<!-- Include all compiled plugins (below), or include individual files as needed -->
-  	<script src="/cargo/static/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/cargo/static/bootstrap/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="/cargo/static/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="/cargo/static/bootstrap/js/moment-with-langs.min.js" type="text/javascript"></script>
+  <script src="/cargo/static/bootstrap/js/responsiveslides.min.js" type="text/javascript"></script>
+  <script src="/cargo/static/bootstrap/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+  <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?sensor=false">
+    </script> 
+  <script src="/cargo/static/bootstrap/js/main.js"></script>
   	
   	<tiles:insertAttribute name="footer" />
   </div>
