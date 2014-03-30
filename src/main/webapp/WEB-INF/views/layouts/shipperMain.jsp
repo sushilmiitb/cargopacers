@@ -34,7 +34,7 @@
   <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?sensor=false">
     </script> 
-  <script src="/cargo/static/bootstrap/js/main.js"></script>
+  <script src="/cargo/static/bootstrap/js/main.js" type="text/javascript"></script>
   	
   	<tiles:insertAttribute name="footer" />
   </div>

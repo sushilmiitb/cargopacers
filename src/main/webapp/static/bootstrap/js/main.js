@@ -46,7 +46,7 @@ $(document).ready(function() {
 	$('#datetimepicker1').datetimepicker({
 		pickTime : false,
 		showToday : true,
-		minDate : moment()
+		minDate : moment().local().subtract('days', 1)
 	});
 	$('#datetimepicker1').on("dp.change", function(e) {
 		$('#datetimepicker1').addClass("has-success");
