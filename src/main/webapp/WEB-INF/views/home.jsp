@@ -26,7 +26,7 @@
 					</div>
 					<div class="col-md-3">
 						<h3>
-							<span class="glyphicon glyphicon-earphone"></span> <span
+							<span class="glyphicon glyphicon-earphone" style="color: #7FBA00;"></span> <span
 								class="text-right"> <strong>+91-98251-25088 </strong></span>
 						</h3>
 					</div>
