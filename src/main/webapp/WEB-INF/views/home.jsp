@@ -26,8 +26,10 @@
 					</div>
 					<div class="col-md-3">
 						<h3>
-							<span class="glyphicon glyphicon-earphone" style="color: #7FBA00;"></span> <span
-								class="text-right"> <strong>+91-98251-25088 </strong></span>
+							<span class="glyphicon glyphicon-earphone"
+								style="color: #7FBA00;"></span> <span class="text-right">
+								<strong>+91-98251-25088 </strong>
+							</span>
 						</h3>
 					</div>
 				</div>
@@ -41,22 +43,37 @@
 									<div class="form-group">
 										<label for="Source" class="col-sm-4 control-label">Source</label>
 										<div class="col-sm-6">
-											<input type="text" class="form-control" id="source"
-												placeholder="Source">
+											<select class="form-control" id="source">
+												<option value="--">--Source--</option>
+												<option value="9">9 Ton</option>
+												<option value="10">10 Ton</option>
+												<option value="15">15 Ton</option>
+												<option value="20">20 Ton</option>
+											</select>
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="Destination" class="col-sm-4 control-label">Destination</label>
 										<div class="col-sm-6">
-											<input type="text" class="form-control" id="destination"
-												placeholder="Destination">
+											<select class="form-control" id="destination">
+												<option value="--">--Destination--</option>
+												<option value="9">9 Ton</option>
+												<option value="10">10 Ton</option>
+												<option value="15">15 Ton</option>
+												<option value="20">20 Ton</option>
+											</select>
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="weight" class="col-sm-4 control-label">Weight</label>
 										<div class="col-sm-6">
-											<input type="text" class="form-control" id="weight"
-												placeholder="Weight(Tonnage)">
+											<select class="form-control" id="weight">
+												<option value="--">--Weight(Tonnage)--</option>
+												<option value="9">9 Ton</option>
+												<option value="10">10 Ton</option>
+												<option value="15">15 Ton</option>
+												<option value="20">20 Ton</option>
+											</select>
 										</div>
 									</div>
 									<div class="form-group">
