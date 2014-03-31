@@ -18,16 +18,16 @@
   <tiles:insertAttribute name="header" defaultValue="header.jsp" />
   <tiles:insertAttribute name="body"/>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/cargo/static/bootstrap/js/jquery-1.11.0.min.js" type="text/javascript"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="/cargo/static/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/cargo/static/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
   <script src="/cargo/static/bootstrap/js/moment-with-langs.min.js" type="text/javascript"></script>
   <script src="/cargo/static/bootstrap/js/responsiveslides.min.js" type="text/javascript"></script>
   <script src="/cargo/static/bootstrap/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
   <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?sensor=false">
     </script> 
-  <script src="/cargo/static/bootstrap/js/main.js"></script>
+  <script src="/cargo/static/bootstrap/js/main.js" type="text/javascript"></script>
    
   <tiles:insertAttribute name="footer" defaultValue="footer.jsp" />
   </div>

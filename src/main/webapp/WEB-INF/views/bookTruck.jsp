@@ -1,72 +1,133 @@
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <tiles:insertDefinition name="shipperHome">
 	<tiles:putAttribute name="body">
-		<form:form modelAttribute="order" method="POST" id="addNewTruckOrder">
-			<label>Pick Up Address</label>
-			<label>Name</label>
-			<form:input path="fromAddress.toName"/>
-			<label>Address</label>
-			<label>Line 1</label>
-			<form:input path="fromAddress.address1"/>
-			<label>Line 2</label>
-			<form:input path="fromAddress.address2"/>
-			<label>Landmark</label>
-			<form:input path="fromAddress.landmark"/>
-			<label>City</label>
-			<form:input path="fromAddress.city"/>
-			<label>Postal Code</label>
-			<form:input path="fromAddress.postalCode"/>
-			<label>Phone Number</label>
-			<form:input path="fromAddress.phoneNumber"/>
-			
-			<label>Pick Up Date</label>
-			<label>Pick Up Time</label>
-			
-			<p>Pickup Address</p>
-			<label>Name</label>
-			<form:input path="toAddress.toName"/>
-			<label></label>
-			<label>Line 1</label>
-			<form:input path="toAddress.address1"/>
-			<label>Line 2</label>
-			<form:input path="toAddress.address2"/>
-			<label>Landmark</label>
-			<form:input path="toAddress.landmark"/>
-			<label>City</label>
-			<form:input path="toAddress.city"/>
-			<label>Postal Code</label>
-			<form:input path="toAddress.postalCode"/>
-			<label>Phone Number</label>
-			<form:input path="toAddress.phoneNumber"/>
-			
-			<label>Type of Truck</label>
-			<form:select path="genericType">
-				<form:option value="--">--Type of Truck--</form:option>
-				<c:forEach var="item" items="${genericTruckTypeList}">
-					<form:option value="${item}">${item}</form:option>
-				</c:forEach>
-			</form:select>
-			
-			<label>Select Goods Type</label>
-			<form:select path="goodsTypeSpecificName">
-				<form:option value="--">--Type of Good--</form:option>
-				<c:forEach var="item" items="${goodsTypeSpecificNameList}">
-					<form:option value="${item}">${item}</form:option>
-				</c:forEach>
-			</form:select>
-			
-			<label>Insurance Type</label>
-			<form:select path="insuranceType">
-				<form:option value="--">--Type of Insurance--</form:option>
-				<c:forEach var="item" items="${insuranceTypeList}">
-					<form:option value="${item}">${item}</form:option>
-				</c:forEach>
-			</form:select>			
-			
-			<input type="submit" value="Book Now"/>
-		</form:form>
+		<div class="container-fluid" style="padding-top: 70px">
+			<div class="row" style="background: #E3E3E3">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<div class="panel panel-default">
+						<div class="panel-body col-xs-offset-1">
+							<div class="title">Book Now</div>
+							<form class="form-horizontal" role="form" modelAttribute="order"
+								method="POST" id="addNewTruckOrder">
+								<div class="form-group">
+									<label for="Name" class="col-sm-4 control-label">Name</label>
+									<div class="col-sm-5">
+										<input type="text" class="form-control" id="Name"
+											placeholder="Name">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="line1" class="col-sm-4 control-label">Address
+										Line 1</label>
+									<div class="col-sm-5">
+										<input type="text" class="form-control" id="line1"
+											placeholder="Line 1">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="line2" class="col-sm-4 control-label">Address
+										Line 2</label>
+									<div class="col-sm-5">
+										<input type="text" class="form-control" id="line2"
+											placeholder="Line 2">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="landmark" class="col-sm-4 control-label">Landmark</label>
+									<div class="col-sm-5">
+										<input type="text" class="form-control" id="landmark"
+											placeholder="Landmark">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="city" class="col-sm-4 control-label">City</label>
+									<div class="col-sm-5">
+										<input type="text" class="form-control" id="city"
+											placeholder="City">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="postalcode" class="col-sm-4 control-label">Postal
+										Code</label>
+									<div class="col-sm-5">
+										<input type="text" class="form-control" id="postalcode"
+											placeholder="Postal Code">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="phonenumber" class="col-sm-4 control-label">Phone
+										Number</label>
+									<div class="col-sm-5">
+										<input type="text" class="form-control" id="phonenumber"
+											placeholder="Phone Number">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="Date" class="col-sm-4 control-label">Pick-Up
+										Date</label>
+									<div class='col-sm-5'>
+										<div class='input-group date' id='datetimepicker1'>
+											<input type='text' class="form-control" /> <span
+												class="input-group-addon"><span
+												class="glyphicon glyphicon-calendar"></span> </span>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="trucktype" class="col-sm-4 control-label">Truck
+										Type</label>
+									<div class="col-sm-5">
+										<select class="form-control" id="trucktype">
+											<option value="--">--Type of Truck--</option>
+											<c:forEach var="item" items="${genericTruckTypeList}">
+												<option value="${item}">${item}</option>
+											</c:forEach>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="goodstype" class="col-sm-4 control-label">Goods
+										Type</label>
+									<div class="col-sm-5">
+										<select class="form-control" id="goodstype">
+											<option value="--">--Type of Good--</option>
+											<c:forEach var="item" items="${goodsTypeSpecificNameList}">
+												<option value="${item}">${item}</option>
+											</c:forEach>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="insurancetype" class="col-sm-4 control-label">Insurance
+										Type</label>
+									<div class="col-sm-5">
+										<select class="form-control" id="insurancetype">
+											<option value="--">--Type of Insurance--</option>
+											<c:forEach var="item" items="${insuranceTypeList}">
+												<option value="${item}">${item}</option>
+											</c:forEach>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-offset-4 col-sm-5">
+										<button type="submit" class="btn btn-info">Book Now</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="col-md-2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
 	</tiles:putAttribute>
 </tiles:insertDefinition>
