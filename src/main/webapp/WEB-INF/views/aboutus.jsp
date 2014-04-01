@@ -74,51 +74,49 @@
 						<h2>
 							<span class="label label-info">Our Team</span>
 						</h2>
-						<div class="row">
-							<div class="panel panel-info panel-body">
-								<div class="col-md-2">
+						<div class="panel panel-info panel-body">
+							<div class="col-md-2">
 
-									<img src="/cargo/static/img/Shaunak.jpg" class="img-thumbnail"
-										style="height: 140px;">
-									<div class="caption">
-										<h5>Shaunak</h5>
-									</div>
+								<img src="/cargo/static/img/Shaunak.jpg" class="img-thumbnail"
+									style="height: 140px;">
+								<div class="caption">
+									<h5>Shaunak</h5>
+								</div>
 
+							</div>
+							<div class="col-md-2">
+								<img src="/cargo/static/img/Sushil.jpg" class="img-thumbnail"
+									style="height: 140px;">
+								<div class="caption">
+									<h5>Sushil</h5>
 								</div>
-								<div class="col-md-2">
-									<img src="/cargo/static/img/Sushil.jpg" class="img-thumbnail"
-										style="height: 140px;">
-									<div class="caption">
-										<h5>Sushil</h5>
-									</div>
+							</div>
+							<div class="col-md-2">
+								<img src="/cargo/static/img/Pawan.jpg" class="img-thumbnail"
+									style="height: 140px;">
+								<div class="caption">
+									<h5>Pawan</h5>
 								</div>
-								<div class="col-md-2">
-									<img src="/cargo/static/img/Pawan.jpg" class="img-thumbnail"
-										style="height: 140px;">
-									<div class="caption">
-										<h5>Pawan</h5>
-									</div>
-								</div>
-								<!--  <div class="col-md-2">
+							</div>
+							<!--  <div class="col-md-2">
 									<img src="/cargo/static/img/Prashant.jpg" class="img-thumbnail" style="height: 140px;">
 									<div class="caption">
 										<h5>Prashant</h5>
 									</div>
 							</div>-->
-								<div class="col-md-2">
-									<img src="/cargo/static/img/Virender.jpg" class="img-thumbnail"
-										style="height: 140px;">
-									<div class="caption">
-										<h5>Virender</h5>
-									</div>
+							<div class="col-md-2">
+								<img src="/cargo/static/img/Virender.jpg" class="img-thumbnail"
+									style="height: 140px;">
+								<div class="caption">
+									<h5>Virender</h5>
 								</div>
-								<!-- <div class="col-md-2">
+							</div>
+							<!-- <div class="col-md-2">
 									<img src="/cargo/static/img/x.jpg" class="img-thumbnail" style="height: 140px;">
 									<div class="caption">
 										<h5>Thumbnail label</h5>
 									</div>
 							</div>-->
-							</div>
 						</div>
 						<div class="rule pad"></div>
 
