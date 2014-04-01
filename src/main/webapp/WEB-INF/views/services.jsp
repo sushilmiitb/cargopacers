@@ -180,7 +180,7 @@
 							<div class="rule pad"></div>
 							<p>
 								Need more assistance? Please drop in an email at <a
-									href="mailto:#"> cargobolt@gmail.com </a> or call us at +91
+									href="mailto:cargobolt@gmail.com"> cargobolt@gmail.com </a> or call us at +91
 								98251 25088.
 							</p>
 						</div>
