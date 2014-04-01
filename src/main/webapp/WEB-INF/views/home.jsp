@@ -136,21 +136,17 @@
 										<ul class="rslides" id="slider1"
 											style="border: 2px solid #DDD; background-color: #FFFFFF;">
 											<li><img class="img-responsive"
-												src="/cargo/static/img/1. Next generation trucking provider.jpg"
-												alt="Slide 2" />
-												<p class="caption">Next generation trucking provider</p></li>
+												src="/cargo/static/img/1. next generation trucking provider_text.jpg"
+												alt="Slide 2" /></li>
 											<li><img class="img-responsive"
-												src="/cargo/static/img/2. Execution at fast speed.jpg"
-												alt="Slide 3" />
-												<p class="caption">Execution at fast speed</p></li>
+												src="/cargo/static/img/2. execution at fast speed_text.jpg"
+												alt="Slide 3" /></li>
 											<li><img class="img-responsive"
-												src="/cargo/static/img/3. Seamless Technology.jpg"
-												alt="Slide 4" />
-												<p class="caption">Seamless Technology</p></li>
+												src="/cargo/static/img/3. seamless technology_text.jpg"
+												alt="Slide 4" /></li>
 											<li><img class="img-responsive"
 												src="/cargo/static/img/4. No more sleepless nights (cut the extreme 2 men).jpg"
-												alt="Slide 4" />
-												<p class="caption">No more sleepless nights</p></li>
+												alt="Slide 4" /></li>
 										</ul>
 									</div>
 								</div>
