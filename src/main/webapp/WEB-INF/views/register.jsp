@@ -69,7 +69,7 @@
 										Name</label>
 									<div class="col-sm-5">
 										<form:input path="userregistration.companyname" type="text" class="form-control" id="inputcompanyname"
-											placeholder="Campany Name"/>
+											placeholder="Company Name"/>
 									</div>
 								</div>
 								<div class="form-group">
@@ -91,7 +91,7 @@
 										Number</label>
 									<div class="col-sm-5">
 										<form:input path="userregistration.phonenumber" type="text" class="form-control" id="inputphone"
-											placeholder="Phane Number"/>
+											placeholder="Phone Number"/>
 									</div>
 								</div>
 								<div class="form-group">
