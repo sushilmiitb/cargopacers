@@ -14,6 +14,16 @@ function changeStyle(active, deactive1, deactive2, deactive3, deactive4) {
 
 }
 
+function validationContactForm(){
+	var x=document.forms["contactusform"]["firstname"].value;
+	var y=document.forms["contactusform"]["phonenumber"].value
+	if ((x==null || x=="") || (y==null || y==""))
+	  {
+	  alert("First name and Phone number must be filled out");
+	  return false;
+	  }
+}
+
 function activeDropdown(active) {
 	document.getElementById(active).getElementsByClassName("dropdown-menu")
 			.item(0).style.display = "block";
