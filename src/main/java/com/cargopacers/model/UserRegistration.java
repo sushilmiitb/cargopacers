@@ -1,16 +1,11 @@
 package com.cargopacers.model;
 
 import java.io.Serializable;
-import java.util.Date;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedDate;
 
   @Entity
   @Table(name="userregistration")
@@ -41,18 +36,10 @@ import org.springframework.data.annotation.LastModifiedDate;
     
     @Column(name = "isrememberme")
     private String isrememberme;
-    
-    @CreatedDate
-    private Date createdat;
-    @LastModifiedDate
-    private Date updatedat;
 
   
     public Long getId() {
       return id;
-    }
-    public void setId(Long id) {
-      this.id = id;
     }
 
     @Override
@@ -119,17 +106,5 @@ import org.springframework.data.annotation.LastModifiedDate;
     }
     public void setIsrememberme(String isrememberme) {
       this.isrememberme = isrememberme;
-    }
-    public Date getCreatedat() {
-      return createdat;
-    }
-    public void setCreatedat(Date createdat) {
-      this.createdat = createdat;
-    }
-    public Date getUpdatedat() {
-      return updatedat;
-    }
-    public void setUpdatedat(Date updatedat) {
-      this.updatedat = updatedat;
     }
 }

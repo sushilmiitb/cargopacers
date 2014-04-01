@@ -1,13 +1,22 @@
 package com.cargopacers.web;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.cargopacers.model.ContactUs;
+import com.cargopacers.service.ContactUsService;
+
 @Controller
 public class HomeController {
+  
+  @Autowired
+  ContactUsService contactUsService;
 
   @RequestMapping(value = { "/", "/home" }, method = RequestMethod.GET)
   public String home() {
@@ -20,7 +29,15 @@ public class HomeController {
   }
 
   @RequestMapping(value = { "/contactus" }, method = RequestMethod.GET)
-  public String contactUs() {
+  public String contactUs(Model m) {
+    contactUsService.getContactUsFormModelDetails(m);
+    return "contactus";
+  }
+  
+  @RequestMapping(value = { "contactus_success" }, method = RequestMethod.POST)
+  public String saveContactUs(@ModelAttribute("contactus") ContactUs contactus,ModelMap modelMap) {
+    contactUsService.save(contactus); 
+    modelMap.addAttribute("successmessage"," Thank you for writing us. We will getback to you soon.");
     return "contactus";
   }
 

@@ -47,7 +47,7 @@
 							</form>
 							<div class="rule"></div>
 							<div class="title">Don't Have an Account? Register Here</div>
-							<form action="success" method="POST" id="userregistrationform" modelAttribute="userregistration" class="form-horizontal" role="form">
+							<form action="register_success" method="POST" id="userregistrationform" modelAttribute="userregistration" class="form-horizontal" role="form">
 								<div class="form-group">
 									<label for="inputfirstname" class="col-sm-4 control-label">First
 										Name</label>
@@ -107,6 +107,9 @@
 										<button type="submit" class="btn btn-default">Sign Up</button>
 									</div>
 								</div>
+								<c:if test="${not empty '${successmessage}' }">
+										<div style="color:#008000" > ${successmessage}</div>
+								</c:if>
 							</form>
 						</div>
 						<div class="col-md-2"></div>

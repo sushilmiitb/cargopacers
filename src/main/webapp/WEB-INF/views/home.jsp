@@ -16,7 +16,7 @@
 							</div>
 							<button type="submit" class="btn btn-info">Track</button>
 							<c:if test="${not empty '${errormessage}' }">
-								<div>${errormessage}</div>
+								<div style="color:#FF0000">${errormessage}</div>
 							</c:if>
 						</form>
 					</div>

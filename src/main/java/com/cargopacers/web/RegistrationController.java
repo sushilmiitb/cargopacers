@@ -3,6 +3,7 @@ package com.cargopacers.web;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -22,10 +23,10 @@ public class RegistrationController {
     return "register";
   }
 
-  @RequestMapping(value = { "/success" },method = RequestMethod.POST)
-  public String saveRegistrationData(@ModelAttribute UserRegistration userregistration) {
-    System.out.println("I am in Post methode"+userregistration.getFirstname()+"isremember values is"+userregistration.getIsrememberme()+"user password"+userregistration.getPassword());
+  @RequestMapping(value = { "register_success" },method = RequestMethod.POST)
+  public String saveRegistrationData(@ModelAttribute("userregistration") UserRegistration userregistration, ModelMap modelMap) {
     userRegistrationService.saveRegistrationDetails(userregistration);
+    modelMap.addAttribute("successmessage","Thank you for registering with us. Our cutsomer representative will call you to varify the registration");
     return "register";
   }
 

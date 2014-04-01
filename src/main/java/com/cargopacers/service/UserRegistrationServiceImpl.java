@@ -21,10 +21,10 @@ public class UserRegistrationServiceImpl implements UserRegistrationService {
   }
 
   @Override
-  public void saveRegistrationDetails(UserRegistration userRegistration) {
+  public void saveRegistrationDetails(UserRegistration userregistration) {
     
-    System.out.println("In UserRegistrationServiceImpl ");
-    userRegistartionRepository.save(userRegistration);
+    System.out.println("In UserRegistrationServiceImpl " +""+ userregistration.getIsrememberme());
+    userRegistartionRepository.save(userregistration);
     
   }
 }

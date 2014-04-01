@@ -20,13 +20,13 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li class="active" id="home"
 							onclick="changeStyle('home','aboutus','services','contactus','register')"><a
-							href="home">Home</a></li>
-						<li id="aboutus"><a href="aboutus"
+							href="/cargo/home">Home</a></li>
+						<li id="aboutus"><a href="/cargo/aboutus"
 							onclick="changeStyle('aboutus','home','contactus','services','register')">About
 								Us</a></li>
-						<li id="services"><a href="services"
+						<li id="services"><a href="/cargo/services"
 							onclick="changeStyle('services','home','aboutus','contactus','register')">Services</a></li>
-						<li id="contactus"><a href="contactus"
+						<li id="contactus"><a href="/cargo/contactus"
 							onclick="changeStyle('contactus','home','aboutus','services','register')">Contact
 								Us</a></li>
 						<li class=" divider"></li>
@@ -50,7 +50,7 @@
 										type="submit" name="commit" value="Sign In" />
 								</form>
 							</ul></li>
-						<li id="register"><a href="register" 
+						<li id="register"><a href="/cargo/register" 
 						onclick="changeStyle('register','services','home','aboutus','contactus')">Register</a></li>
 						<li><form class="navbar-form navbar-left" role="search">
         
