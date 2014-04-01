@@ -12,6 +12,7 @@
 			target="_blank"> <img alt="twitter-logo" src="#"></a> <a
 			href="#" style="margin-right: 2px; text-decoration: none"
 			target="_blank"> <img alt="linkdin-logo" src="#"></a></span>-->
+			Copyright © 2014 CargoBolt Logistics Pvt. Ltd. All rights reserved.
 		</div>
 	</div>
 </div>

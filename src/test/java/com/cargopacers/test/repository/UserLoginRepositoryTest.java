@@ -59,5 +59,4 @@ public class UserLoginRepositoryTest {
     UserLogin deletedLogin = userLoginRepository.findOne(login.getId());
     assertNull(deletedLogin);
   }
-
 }

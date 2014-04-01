@@ -16,6 +16,8 @@ import javax.persistence.ManyToMany;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 
+import com.cargopacers.model.SecurityGroup;
+
 /**
  * 
  * @author mukesh
