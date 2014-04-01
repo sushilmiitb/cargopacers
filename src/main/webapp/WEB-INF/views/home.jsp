@@ -63,7 +63,7 @@
 												<option value="Nagaur">Nagaur</option>
 												<option value="Sikar">Sikar</option>
 												<option value="Tong">Tong</option>
-												<option value="Updaipur">Updaipur</option>
+												<option value="Udaipur">Updaipur</option>
 												<option value="Vadodara">Vadodara</option>
 											</select>
 										</div>
@@ -91,7 +91,7 @@
 												<option value="Nagaur">Nagaur</option>
 												<option value="Sikar">Sikar</option>
 												<option value="Tong">Tong</option>
-												<option value="Updaipur">Updaipur</option>
+												<option value="Udaipur">Updaipur</option>
 												<option value="Vadodara">Vadodara</option>
 											</select>
 										</div>
