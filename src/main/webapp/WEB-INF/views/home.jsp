@@ -16,7 +16,7 @@
 							</div>
 							<button type="submit" class="btn btn-info">Track</button>
 							<c:if test="${not empty '${errormessage}' }">
-								<div style="color:#FF0000">${errormessage}</div>
+								<div style="color: #FF0000">${errormessage}</div>
 							</c:if>
 						</form>
 					</div>
@@ -45,10 +45,26 @@
 										<div class="col-sm-6">
 											<select class="form-control" id="source">
 												<option value="--">--Source--</option>
-												<option value="9">9 Ton</option>
-												<option value="10">10 Ton</option>
-												<option value="15">15 Ton</option>
-												<option value="20">20 Ton</option>
+												<option value="Ahmedabad">Ahmedabad</option>
+												<option value="Ajmer">Ajmer</option>
+												<option value="Anand">Anand</option>
+												<option value="Banswara">Banswara</option>
+												<option value="Bharuch">Bharuch</option>
+												<option value="Bhilwara">Bhilwara</option>
+												<option value="Bundi">Bundi</option>
+												<option value="Chittaurgarh">Chittaurgarh</option>
+												<option value="Dungarpur">Dungarpur</option>
+												<option value="Gandhinagar">Gandhinagar</option>
+												<option value="Jaipur">Jaipur</option>
+												<option value="Jhalawar">Jhalawar</option>
+												<option value="Kandla Port">Kandla Port</option>
+												<option value="Kota">Kota</option>
+												<option value="Mundra">Mundra Port</option>
+												<option value="Nagaur">Nagaur</option>
+												<option value="Sikar">Sikar</option>
+												<option value="Tong">Tong</option>
+												<option value="Updaipur">Updaipur</option>
+												<option value="Vadodara">Vadodara</option>
 											</select>
 										</div>
 									</div>
@@ -57,10 +73,26 @@
 										<div class="col-sm-6">
 											<select class="form-control" id="destination">
 												<option value="--">--Destination--</option>
-												<option value="9">9 Ton</option>
-												<option value="10">10 Ton</option>
-												<option value="15">15 Ton</option>
-												<option value="20">20 Ton</option>
+												<option value="Ahmedabad">Ahmedabad</option>
+												<option value="Ajmer" hidden="true">Ajmer</option>
+												<option value="Anand">Anand</option>
+												<option value="Banswara">Banswara</option>
+												<option value="Bharuch">Bharuch</option>
+												<option value="Bhilwara">Bhilwara</option>
+												<option value="Bundi">Bundi</option>
+												<option value="Chittaurgarh">Chittaurgarh</option>
+												<option value="Dungarpur">Dungarpur</option>
+												<option value="Gandhinagar">Gandhinagar</option>
+												<option value="Jaipur">Jaipur</option>
+												<option value="Jhalawar">Jhalawar</option>
+												<option value="Kandla Port">Kandla Port</option>
+												<option value="Kota">Kota</option>
+												<option value="Mundra">Mundra Port</option>
+												<option value="Nagaur">Nagaur</option>
+												<option value="Sikar">Sikar</option>
+												<option value="Tong">Tong</option>
+												<option value="Updaipur">Updaipur</option>
+												<option value="Vadodara">Vadodara</option>
 											</select>
 										</div>
 									</div>
