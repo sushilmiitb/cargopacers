@@ -28,14 +28,14 @@
 								you face major <strong>fluctuations in delivery times</strong>
 								and quality of service?
 							</p>
-							<p>We at CargoBolt.com are solving these problems by building
+							<p>We at CargoBolt are solving these problems by building
 								a one-stop hassle free solution for all your trucking needs.
 								Gone are the days when you would lose sleep over the location of
 								your cargo shipments. Whether you have a one-off requirement for
-								trucks for goods movement or are looking for a long-term
+								trucks for cargo movement or are looking for a long-term
 								strategic partner, we would be happy to help. Through technology
 								and our fleet of partner truck owners and drivers, we wish to
-								bring the same level of efficiency in the goods movement that
+								bring the same level of efficiency in cargo movement that
 								you expect for your own travel in flights.</p>
 						</div>
 						<div class="rule pad"></div>
@@ -52,19 +52,19 @@
 								various customers. The company specializes in fleet backhaul,
 								using return journeys to transport other customers&apos; loads,
 								thus reducing empty travel.</p>
-							<p>CargoBolt follows a strict process of induction of trucks
+							<p>CargoBolt follows a strict process for induction of trucks
 								and its drivers. The stringent process of induction is not only
 								confined to truck owners and drivers but also vehicles.
-								CargoBolt ensures that all trucks have valid official documents
+								It ensures that all trucks have valid official documents
 								such as permit, registration certificate and insurance policy
-								before the vehicles are inducted into its service. This ensures
-								that CargoBolt can deliver on its promise of providing
-								guaranteed hassle-free service each time.</p>
+								before the vehicles are inducted into its service. These measures
+								reflect that the company's commitment to provide guaranteed hassle
+								free service each time. </p>
 							<p>Technology is at the heart of everything we do. We truly
 								believe that technology will change the way we think about goods
 								transport just as it has changed train and flight travel for
-								people in the previous two decades. We want to be at the
-								forefront in this change and would love to partner with you and
+								people in the previous two decades. We wish to lead this change
+								and would love to partner with you and
 								share your success. Sounds like a good promise? Please
 								&ldquo;Contact Us&rdquo; or &ldquo;Register&rdquo; and
 								we&apos;ll get back to you.</p>

@@ -22,7 +22,7 @@
 					</div>
 					<div class="col-md-6">
 						<h2 class="text-center">A hi-tech, reliable and easy way to
-							move cargo in trucks.</h2>
+							move cargo in trucks</h2>
 					</div>
 					<div class="col-md-3">
 						<h3>
@@ -158,7 +158,7 @@
 					<div class="col-md-4">
 						<div class="text-center">
 							<h2>
-								<span class="label label-info">who are we?</span>
+								<span class="label label-info">Who are we?</span>
 							</h2>
 						</div>
 						<div class="panel panel-info panel-body">
@@ -166,16 +166,16 @@
 								<li><p>
 										<img src="/cargo/static/img/accept.png"> <span>We
 											are a group of IIM and IIT graduates building the next
-											generation solution for moving goods. We envision to bring
-											the same level of efficiency in cargo movement that people
+											generation solution for transporting cargo. We envision to bring
+											the same level of efficiency in cargo transportation that people
 											expect for their own movement in flights. We use state of the
-											art technologies and are learning every day. When we promise
+											art technologies and are changing the way people think and operate in the trucking industry. When we promise
 											something, we deliver it. No excuses.</span>
 									</p></li>
 								<li><p>
 										<img src="/cargo/static/img/accept.png"> <span>We
 											would be happy to understand your trucking needs and look
-											forward to serving you. Please &ldquo;Contact Us&rdquo; and
+											forward to serving you. Please <a href="http://www.cargobolt.com/cargo/contactus">&ldquo;Contact Us&rdquo; </a> and
 											we&apos;ll get back to you.</span>
 									</p></li>
 							</ul>
@@ -184,7 +184,7 @@
 					<div class="col-md-4">
 						<div class="text-center">
 							<h2>
-								<span class="label label-info">why choose us?</span>
+								<span class="label label-info">Why choose us?</span>
 							</h2>
 						</div>
 						<div class="panel panel-info panel-body">
@@ -197,6 +197,9 @@
 										<img src="/cargo/static/img/accept.png"> <span>Book
 											a truck in 60 seconds</span>
 									</h5></li>
+								<li><h5>
+										<img src="/cargo/static/img/accept.png"> <span>Competitive pricing</span>
+								</h5></li>	
 								<li><h5>
 										<img src="/cargo/static/img/accept.png"> <span>Online
 											and offline booking</span>
@@ -230,7 +233,7 @@
 								serve the needs of our various customers.</p>
 							<p>Once you are registered with us, you can book trucks both
 								online and offline. We provide 100% reliable cargo movement and
-								unbeatable execution. &ldquo;Register&rdquo; here to get
+								unbeatable execution. <a href="http://www.cargobolt.com/cargo/register">&ldquo;Register&rdquo;</a> here to get
 								started.</p>
 						</div>
 					</div>

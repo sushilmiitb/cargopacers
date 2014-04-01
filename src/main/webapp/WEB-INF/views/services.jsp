@@ -10,16 +10,16 @@
 							<span class="label label-info"> Services </span>
 						</h2>
 						<div class="panel panel-info panel-body">
-							<p>Every product around you has been on at some point
-								&hyphen; the raw materials of your house or office, the food you
+							<p>Every product around you has been on a truck at some point
+								&hyphen; the raw materials for your house or office, the food you
 								eat, the bed you sleep in. CargoBolt specializes in movement of
 								these goods. We are a non-asset based surface logistics provider
 								and freight forwarder. We believe in acting responsibly and
 								always deliver on our promises. No excuses.</p>
 							<p>Right now, we offer full truck loads in Rajasthan,
 								Gujarat, Haryana and Delhi. It can be single truck requirements
-								or a longer term contract for providing trucks. The bookings can
-								be done both online and offline. In near future, we are looking
+								or a long term contract for providing trucks. The bookings can
+								be done both online and offline. In the near future, we are looking
 								to expand to less than truck loads and increase our geographical
 								presence.</p>
 						</div>
@@ -31,12 +31,10 @@
 							<p>
 								<u><strong>For manufacturers and wholesalers</strong>:</u>
 								Please &ldquo;contact us&rdquo; or &ldquo;register&rdquo; to get
-								started with us. We&apos;ll get in touch with you to completion
-								the registration and work with you to understand your trucking
-								requirements. Once this is done, you are ready to book trucks
-								with us anytime both online and offline. Our representatives
-								will always work with you to find the best solutions for your
-								load requirements.
+								started with us. Our sales representative will call you to verify the registration 
+								and work with you to understand your trucking
+								requirements. Once this is done, you can book trucks
+								with us anytime both online and offline. Furthermore, you can manage your account to view order history, track shipments and avail customer loyalty rewards and privileges.
 							</p>
 							<div class="rule"></div>
 							<p>
@@ -66,8 +64,8 @@
 									needs. Once you are registered with us, you can directly book
 									trucks through our website or on phone. Our interface is very
 									similar to internet travel sites in its ease of use. We can
-									also work with you understand your transportation needs and
-									provide you customized trucking services. All you need to do is
+									also work with you to understand your transportation needs and
+									provide you with customized trucking services. All you need to do is
 									give us a buzz. We have a fleet of partner truck owners and
 									drivers who we co-ordinate with directly to meet your needs. We
 									are trying to create value in the entire transportation chain
@@ -89,7 +87,7 @@
 
 							<p style="color: #5BC0DE">
 								<abbr>Q:</abbr><span> What are the insurance policies for
-									the good transferred by CargoBolt? </span>
+									the goods transferred by CargoBolt? </span>
 							</p>
 							<p>
 								<abbr>A:</abbr><span> We prefer goods that are insured in
