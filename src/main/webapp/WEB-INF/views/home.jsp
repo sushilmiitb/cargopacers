@@ -175,7 +175,7 @@
 								<li><p>
 										<img src="/cargo/static/img/accept.png"> <span>We
 											would be happy to understand your trucking needs and look
-											forward to serving you. Please <a href="http://www.cargobolt.com/cargo/contactus">&ldquo;Contact Us&rdquo; </a> and
+											forward to serving you. Please <a href="http://www.cargobolt.com/cargo/contactus">Contact Us </a> and
 											we&apos;ll get back to you.</span>
 									</p></li>
 							</ul>
@@ -233,7 +233,7 @@
 								serve the needs of our various customers.</p>
 							<p>Once you are registered with us, you can book trucks both
 								online and offline. We provide 100% reliable cargo movement and
-								unbeatable execution. <a href="http://www.cargobolt.com/cargo/register">&ldquo;Register&rdquo;</a> here to get
+								unbeatable execution. <a href="http://www.cargobolt.com/cargo/register">Register</a> here to get
 								started.</p>
 						</div>
 					</div>

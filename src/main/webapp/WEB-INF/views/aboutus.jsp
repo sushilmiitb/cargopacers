@@ -66,7 +66,7 @@
 								people in the previous two decades. We wish to lead this change
 								and would love to partner with you and
 								share your success. Sounds like a good promise? Please
-								&ldquo;Contact Us&rdquo; or &ldquo;Register&rdquo; and
+								<a href="http://www.cargobolt.com/cargo/contactus">Contact Us</a> or <a href="http://www.cargobolt.com/cargo/register">Register</a> and
 								we&apos;ll get back to you.</p>
 						</div>
 						<div class="rule pad"></div>
