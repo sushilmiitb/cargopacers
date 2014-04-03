@@ -1,4 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <div>
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="container-fluid">
@@ -36,19 +37,24 @@
 							data-toggle="dropdown">Login<strong class="caret"></strong></a>
 							<ul class="dropdown-menu"
 								style="padding: 15px; padding-bottom: 15px;">
-								<form action="login" modelAttribute="login" method="post"
+                <sec:authorize access="isAnonymous()">
+								<form action="j_spring_security_check" method="post"
 									accept-charset="UTF-8">
 									<input id="j_username" style="margin-bottom: 15px;" type="text"
 										name="j_username" size="30" placeholder="Username" /> <input
 										id="j_password" style="margin-bottom: 15px;" type="password"
 										name="j_password" size="30" placeholder="Password" /> <input
 										id="user_remember_me" style="float: left; margin-right: 10px;"
-										type="checkbox" name="user[remember_me]" value="1" /> <label
+										type="checkbox" name="j_spring_security_check" value="1" /> <label
 										class="string optional" for="user_remember_me">Remember
 										me</label> <br/><a href="#" > Forgot Password? </a><br /><input class="btn btn-default"
 										style="clear: left; width: 100%; height: 32px; font-size: 13px;"
 										type="submit" name="commit" value="Sign In" />
 								</form>
+                </sec:authorize>
+                <sec:authorize access="isAuthenticated()">
+                    <a href="<c:url value="/j_spring_security_logout" />">Logout</a>
+               </sec:authorize>
 							</ul></li>
 						<li id="register"><a href="/cargo/register" 
 						onclick="changeStyle('register','services','home','aboutus','contactus')">Register</a></li>

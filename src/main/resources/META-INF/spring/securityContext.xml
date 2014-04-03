@@ -13,27 +13,31 @@
   <http pattern="/static/**" security="none" />
 
   <http auto-config="true">
-    <intercept-url pattern="/login.jsp*" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+    <intercept-url pattern="/register*" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
     <intercept-url pattern="/home" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
     <intercept-url pattern="/" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
-    <intercept-url pattern="/**" access="IS_AUTHENTICATED_ANONYMOUSLY" />
-    <form-login />
-    <logout />
+    <intercept-url pattern="/shipper*/**" access="ROLE_SHIPPER"/>
+    <intercept-url pattern="/trucker*/**" access="ROLE_TRUCKER"/>
+    <form-login login-page='/register' authentication-failure-url="/register?error=1" 
+      default-target-url="/"/>
+    <logout invalidate-session="true"/>
   </http>
+  
+  <beans:bean class="org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler"/>
 
   <beans:bean name="bcryptEncoder"
     class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
   <authentication-manager>
     <authentication-provider>
-    <!--  
-    <password-encoder ref="bcryptEncoder"/>
-    -->
       <user-service>
         <user name="admin" password="admin" authorities="ROLE_USER, ROLE_ADMIN" />
         <user name="user" password="user" authorities="ROLE_USER" />
         <user name="shipper" password="shipper" authorities="ROLE_SHIPPER" />
         <user name="trucker" password="trucker" authorities="ROLE_TRUCKER" />
       </user-service>
+    </authentication-provider>
+    <authentication-provider user-service-ref='userDetailsService'>
+      <!--  <password-encoder ref="bcryptEncoder"/> -->
     </authentication-provider>
   </authentication-manager>
 </beans:beans>

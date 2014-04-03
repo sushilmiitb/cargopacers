@@ -22,7 +22,7 @@ import com.cargopacers.repository.UserLoginRepository;
  * @author mukesh
  *
  */
-@Service
+@Service(value="userDetailsService")
 public class UserDetailsServiceImpl implements UserDetailsService {
 
   @Autowired

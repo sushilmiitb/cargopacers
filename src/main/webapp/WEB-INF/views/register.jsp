@@ -11,25 +11,25 @@
 					<div class="panel panel-default">
 						<div class="panel-body col-xs-offset-1">
 							<div class="title">Sign In</div>
-							<form class="form-horizontal" role="form">
+							<form class="form-horizontal" role="form" action="j_spring_security_check" method="post">
 								<div class="form-group">
 									<label for="inputEmail3" class="col-sm-4 control-label">Email</label>
 									<div class="col-sm-5">
-										<input type="email" class="form-control" id="inputEmail3"
+										<input type="text" name="j_username" class="form-control" id="inputEmail3"
 											placeholder="Email">
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="inputPassword3" class="col-sm-4 control-label">Password</label>
 									<div class="col-sm-5">
-										<input type="password" class="form-control"
+										<input type="password" name="j_password" class="form-control"
 											id="inputPassword3" placeholder="Password">
 									</div>
 								</div>
 								<div class="form-group">
 									<div class="col-sm-offset-4 col-sm-5">
 										<div class="checkbox">
-											<label> <input type="checkbox"> Remember me
+											<label> <input type="checkbox" name="_spring_security_remember_me"> Remember me
 											</label>
 										</div>
 									</div>
