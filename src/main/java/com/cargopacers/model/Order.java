@@ -13,9 +13,13 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.format.annotation.DateTimeFormat.ISO;
 
 /**
  * 
@@ -72,6 +76,10 @@ public class Order implements Serializable {
   private Long permittedTonnage; //weight that is permitted for truck to carry
   private Long chassisType;
   
+  @Column(name ="pickupDate")
+  @Temporal(TemporalType.DATE)
+  private Date pickupDate;
+  
   public String getMakeCompany() {
     return makeCompany;
   }
@@ -125,6 +133,12 @@ public class Order implements Serializable {
   }
   public void setPermittedTonnage(Long permittedTonnage) {
     this.permittedTonnage = permittedTonnage;
+  }
+  public Date getPickupDate() {
+    return pickupDate;
+  }
+  public void setPickupDate(Date pickupDate) {
+    this.pickupDate = pickupDate;
   }
   public Long getChassisType() {
     return chassisType;

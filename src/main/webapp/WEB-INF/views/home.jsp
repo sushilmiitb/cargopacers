@@ -1,4 +1,5 @@
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <tiles:insertDefinition name="homepage">
@@ -38,74 +39,74 @@
 						<div style="margin-top: 6%">
 							<div class="panel panel-info">
 								<div class="text-center panel-heading">Full Truck Load</div>
-								<form class="form-horizontal panel-body text-center" role="form"
-									style="">
+								<form class="form-horizontal panel-body text-center" role="form" modelAttribute="bookingdata"
+									style="" action="home_success" method="POST" >
 									<div class="form-group">
 										<label for="Source" class="col-sm-4 control-label">Source</label>
 										<div class="col-sm-6">
-											<select class="form-control" id="source">
-												<option value="--">--Source--</option>
-												<option value="Ahmedabad">Ahmedabad</option>
-												<option value="Ajmer">Ajmer</option>
-												<option value="Anand">Anand</option>
-												<option value="Banswara">Banswara</option>
-												<option value="Bharuch">Bharuch</option>
-												<option value="Bhilwara">Bhilwara</option>
-												<option value="Bundi">Bundi</option>
-												<option value="Chittaurgarh">Chittaurgarh</option>
-												<option value="Dungarpur">Dungarpur</option>
-												<option value="Gandhinagar">Gandhinagar</option>
-												<option value="Jaipur">Jaipur</option>
-												<option value="Jhalawar">Jhalawar</option>
-												<option value="Kandla Port">Kandla Port</option>
-												<option value="Kota">Kota</option>
-												<option value="Mundra">Mundra Port</option>
-												<option value="Nagaur">Nagaur</option>
-												<option value="Sikar">Sikar</option>
-												<option value="Tong">Tong</option>
-												<option value="Udaipur">Udaipur</option>
-												<option value="Vadodara">Vadodara</option>
-											</select>
+											<form:select path="bookingdata.fromAddress.city" class="form-control" id="source">
+												<form:option value="--">--Source--</form:option>
+												<form:option value="Ahmedabad">Ahmedabad</form:option>
+												<form:option value="Ajmer">Ajmer</form:option>
+												<form:option value="Anand">Anand</form:option>
+												<form:option value="Banswara">Banswara</form:option>
+												<form:option value="Bharuch">Bharuch</form:option>
+												<form:option value="Bhilwara">Bhilwara</form:option>
+												<form:option value="Bundi">Bundi</form:option>
+												<form:option value="Chittaurgarh">Chittaurgarh</form:option>
+												<form:option value="Dungarpur">Dungarpur</form:option>
+												<form:option value="Gandhinagar">Gandhinagar</form:option>
+												<form:option value="Jaipur">Jaipur</form:option>
+												<form:option value="Jhalawar">Jhalawar</form:option>
+												<form:option value="Kandla Port">Kandla Port</form:option>
+												<form:option value="Kota">Kota</form:option>
+												<form:option value="Mundra">Mundra Port</form:option>
+												<form:option value="Nagaur">Nagaur</form:option>
+												<form:option value="Sikar">Sikar</form:option>
+												<form:option value="Tong">Tong</form:option>
+												<form:option value="Udaipur">Udaipur</form:option>
+												<form:option value="Vadodara">Vadodara</form:option>
+											</form:select>
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="Destination" class="col-sm-4 control-label">Destination</label>
 										<div class="col-sm-6">
-											<select class="form-control" id="destination">
-												<option value="--">--Destination--</option>
-												<option value="Ahmedabad">Ahmedabad</option>
-												<option value="Ajmer" hidden="true">Ajmer</option>
-												<option value="Anand">Anand</option>
-												<option value="Banswara">Banswara</option>
-												<option value="Bharuch">Bharuch</option>
-												<option value="Bhilwara">Bhilwara</option>
-												<option value="Bundi">Bundi</option>
-												<option value="Chittaurgarh">Chittaurgarh</option>
-												<option value="Dungarpur">Dungarpur</option>
-												<option value="Gandhinagar">Gandhinagar</option>
-												<option value="Jaipur">Jaipur</option>
-												<option value="Jhalawar">Jhalawar</option>
-												<option value="Kandla Port">Kandla Port</option>
-												<option value="Kota">Kota</option>
-												<option value="Mundra">Mundra Port</option>
-												<option value="Nagaur">Nagaur</option>
-												<option value="Sikar">Sikar</option>
-												<option value="Tong">Tong</option>
-												<option value="Udaipur">Udaipur</option>
-												<option value="Vadodara">Vadodara</option>
-											</select>
+											<form:select path="bookingdata.toAddress.city"class="form-control" id="destination">
+												<form:option value="--">--Destination--</form:option>
+												<form:option value="Ahmedabad">Ahmedabad</form:option>
+												<form:option value="Ajmer" hidden="true">Ajmer</form:option>
+												<form:option value="Anand">Anand</form:option>
+												<form:option value="Banswara">Banswara</form:option>
+												<form:option value="Bharuch">Bharuch</form:option>
+												<form:option value="Bhilwara">Bhilwara</form:option>
+												<form:option value="Bundi">Bundi</form:option>
+												<form:option value="Chittaurgarh">Chittaurgarh</form:option>
+												<form:option value="Dungarpur">Dungarpur</form:option>
+												<form:option value="Gandhinagar">Gandhinagar</form:option>
+												<form:option value="Jaipur">Jaipur</form:option>
+												<form:option value="Jhalawar">Jhalawar</form:option>
+												<form:option value="Kandla Port">Kandla Port</form:option>
+												<form:option value="Kota">Kota</form:option>
+												<form:option value="Mundra">Mundra Port</form:option>
+												<form:option value="Nagaur">Nagaur</form:option>
+												<form:option value="Sikar">Sikar</form:option>
+												<form:option value="Tong">Tong</form:option>
+												<form:option value="Udaipur">Udaipur</form:option>
+												<form:option value="Vadodara">Vadodara</form:option>
+											</form:select>
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="weight" class="col-sm-4 control-label">Weight</label>
 										<div class="col-sm-6">
-											<select class="form-control" id="weight">
-												<option value="--">--Weight(Tonnage)--</option>
-												<option value="9">9 Ton</option>
-												<option value="10">10 Ton</option>
-												<option value="15">15 Ton</option>
-												<option value="20">20 Ton</option>
-											</select>
+											<form:select path="bookingdata.gwt" class="form-control" id="weight">
+												<form:option value="0">--Weight(Tonnage)--</form:option>
+												<form:option value="9">9 Ton</form:option>
+												<form:option value="10">10 Ton</form:option>
+												<form:option value="15">15 Ton</form:option>
+												<form:option value="20">20 Ton</form:option>
+											</form:select>
 										</div>
 									</div>
 									<div class="form-group">
@@ -113,7 +114,7 @@
 											Date</label>
 										<div class="col-sm-6">
 											<div class='input-group date' id='datetimepicker1'>
-												<input type='text' class="form-control" /> <span
+												<form:input path="bookingdata.pickupDate" type='text' class="form-control" /> <span
 													class="input-group-addon"><span
 													class="glyphicon glyphicon-calendar"></span> </span>
 											</div>
@@ -121,10 +122,13 @@
 									</div>
 									<div class="form-group">
 										<div class="col-sm-offset-2 col-sm-10">
-											<button type="submit" class="btn btn-info">Search</button>
+											<button type="submit" class="btn btn-info">Book</button>
 										</div>
 									</div>
 								</form>
+								<c:if test="${not empty '${successmessage}' }">
+										<div style="color:#008000" > ${successmessage}</div>
+							</c:if>
 							</div>
 						</div>
 					</div>

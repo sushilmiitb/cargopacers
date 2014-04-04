@@ -42,4 +42,11 @@ public class ShipperServiceImpl implements ShipperService{
   public void saveBookTruckForm(Order order){
     orderRepository.save(order);
   }
+
+  @Override
+  public void getBookTruckFromHome(Model m) {
+    Order order = new Order();
+    m.addAttribute("bookingdata", order);
+    
+  }
 }

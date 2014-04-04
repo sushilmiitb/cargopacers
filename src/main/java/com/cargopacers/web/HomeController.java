@@ -10,16 +10,28 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.cargopacers.model.ContactUs;
+import com.cargopacers.model.Order;
 import com.cargopacers.service.ContactUsService;
+import com.cargopacers.service.ShipperService;
 
 @Controller
 public class HomeController {
   
   @Autowired
   ContactUsService contactUsService;
+  @Autowired
+  ShipperService shipperService;
 
   @RequestMapping(value = { "/", "/home" }, method = RequestMethod.GET)
-  public String home() {
+  public String home(Model m) {
+    shipperService.getBookTruckFromHome(m);
+    return "home";
+  }
+  
+  @RequestMapping(value = { "home_success" }, method = RequestMethod.POST)
+  public String homeSuccess(@ModelAttribute("bookingdata") Order order,ModelMap modelMap) {
+    shipperService.saveBookTruckForm(order);
+    modelMap.addAttribute("successmessage"," Thank you for writing us. We will getback to you soon.");
     return "home";
   }
 
@@ -38,7 +50,7 @@ public class HomeController {
   public String saveContactUs(@ModelAttribute("contactus") ContactUs contactus,ModelMap modelMap) {
     contactUsService.save(contactus); 
     modelMap.addAttribute("successmessage"," Thank you for writing us. We will getback to you soon.");
-    return "contactus";
+    return "forward:/contactus";
   }
 
   @RequestMapping(value = { "/services" }, method = RequestMethod.GET)
