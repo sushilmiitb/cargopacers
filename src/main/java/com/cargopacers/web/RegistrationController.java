@@ -26,7 +26,7 @@ public class RegistrationController {
   @RequestMapping(value = { "register_success" },method = RequestMethod.POST)
   public String saveRegistrationData(@ModelAttribute("userregistration") UserRegistration userregistration, ModelMap modelMap) {
     userRegistrationService.saveRegistrationDetails(userregistration);
-    modelMap.addAttribute("successmessage","Thank you for registering with us. Our cutsomer representative will call you to varify the registration");
+    modelMap.addAttribute("successmessage","Thank you for registering with us. Our cutsomer representative will call you to verify the registration");
     return "register";
   }
 
