@@ -72,7 +72,7 @@
 									<div class="form-group">
 										<label for="Destination" class="col-sm-4 control-label">Destination</label>
 										<div class="col-sm-6">
-											<form:select path="bookingdata.toAddress.city"class="form-control" id="destination">
+											<form:select path="bookingdata.toAddress.city" class="form-control" id="destination">
 												<form:option value="--">--Destination--</form:option>
 												<form:option value="Ahmedabad">Ahmedabad</form:option>
 												<form:option value="Ajmer" hidden="true">Ajmer</form:option>
