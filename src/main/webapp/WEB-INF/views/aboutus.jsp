@@ -71,7 +71,7 @@
 						</div>
 						<div class="rule pad"></div>
 
-						<h2>
+<%--						<h2>
 							<span class="label label-info">Our Team</span>
 						</h2>
 						<div class="panel panel-info panel-body">
@@ -119,7 +119,7 @@
 							</div>-->
 						</div>
 						<div class="rule pad"></div>
-
+--%>
 						<p>
 							Want to know more? <a href="/cargo/contactus">Contact Us</a>
 						</p>

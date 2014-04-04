@@ -25,6 +25,9 @@ import javax.persistence.Table;
     @Column(name = "companyname")
     private String companyname;
     
+    @Column(name = "designation")
+    private String designation;
+    
     @Column(name = "password")
     private String password;
     
@@ -106,5 +109,14 @@ import javax.persistence.Table;
     }
     public void setIsrememberme(String isrememberme) {
       this.isrememberme = isrememberme;
+    }
+    public String getDesignation() {
+      return designation;
+    }
+    public void setDesignation(String designation) {
+      this.designation = designation;
+    }
+    public void setId(Long id) {
+      this.id = id;
     }
 }

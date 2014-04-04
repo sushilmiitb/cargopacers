@@ -73,6 +73,14 @@
 									</div>
 								</div>
 								<div class="form-group">
+									<label for="inputdesignation" class="col-sm-4 control-label">Designation
+										</label>
+									<div class="col-sm-5">
+										<form:input path="userregistration.designation" type="text" class="form-control" id="inputdesignation"
+											placeholder="Designation"/>
+									</div>
+								</div>
+								<div class="form-group">
 									<label for="inputEmail3" class="col-sm-4 control-label">Email</label>
 									<div class="col-sm-5">
 										<form:input path="userregistration.emailid" type="email" class="form-control" id="inputEmail3"
