@@ -43,19 +43,36 @@ $(window).load(function() {
 });
 
 $(document).ready(function() {
-	$('#datetimepicker1').datetimepicker({
+	$('#datepicker1').datetimepicker({
 		pickTime : false,
 		showToday : true,
 		minDate : moment().local().subtract('days', 1)
 	});
-	$('#datetimepicker1').on("dp.change", function(e) {
-		$('#datetimepicker1').addClass("has-success");
-		$('#datetimepicker1').removeClass("has-error");
-		$('#datetimepicker1').on("dp.error", function(e) {
-			$('#datetimepicker1').addClass("has-error");
+	$('#datepicker1').on("dp.change", function(e) {
+		$('#datepicker1').addClass("has-success");
+		$('#datepicker1').removeClass("has-error");
+		$('#datepicker1').on("dp.error", function(e) {
+			$('#datepicker1').addClass("has-error");
 		});
 	});
 });
+
+$(document).ready(function() {
+	$('#timepicker1').datetimepicker({
+		pickDate:false,
+		showToday : true,
+		minDate : moment().local().subtract('days', 1)
+	});
+	$('#timepicker1').on("dp.change", function(e) {
+		$('#timepicker1').addClass("has-success");
+		$('#timepicker1').removeClass("has-error");
+		$('#timepicker1').on("dp.error", function(e) {
+			$('#timepicker1').addClass("has-error");
+		});
+	});
+});
+
+
 
 function initialize() {
 	var myLatlng = new google.maps.LatLng(23.034619, 72.532652);
