@@ -53,7 +53,7 @@
 										Name</label>
 									<div class="col-sm-5">
 										<form:input path="userregistration.firstname" type="text" class="form-control" id="inputfirstname"
-											placeholder="First Name"/>
+											placeholder="First Name" aria-describedby="name-format" required="true"/>
 									</div>
 								</div>
 								<div class="form-group">
@@ -91,7 +91,7 @@
 									<label for="inputpassword" class="col-sm-4 control-label">Password</label>
 									<div class="col-sm-5">
 										<form:input path="userregistration.password" type="password" class="form-control" id="inputpassword"
-											placeholder="Password"/>
+											placeholder="Password" required="true"/>
 									</div>
 								</div>
 								<div class="form-group">
@@ -99,7 +99,7 @@
 										Number</label>
 									<div class="col-sm-5">
 										<form:input path="userregistration.phonenumber" type="text" class="form-control" id="inputphone"
-											placeholder="Phone Number"/>
+										 placeholder="Phone Number" aria-describedby="name-format" min="5" max="10" pattern="[0-9]{5,10}" required="true" title="Please enter correct phonnumber"/>
 									</div>
 								</div>
 								<div class="form-group">

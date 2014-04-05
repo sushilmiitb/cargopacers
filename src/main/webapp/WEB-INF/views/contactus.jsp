@@ -10,14 +10,14 @@
 					<div class="col-md-6">
 						<div class="panel panel-info">
 							<div class="panel panel-heading text-center">Write to Us</div>
-							<form name="contactusform" action="contactus_success" method="POST" id="contactusform"  onsubmit="return validationContactForm()" modelAttribute="contactus" class="form-horizontal panel-body text-center" role="form"
+							<form name="contactusform" action="contactus_success" method="POST" id="contactusform" modelAttribute="contactus" class="form-horizontal panel-body text-center" role="form"
 								style="">
 								<div class="form-group">
 									<label for="firstname" class="col-sm-4 control-label">First
 										Name</label>
 									<div class="col-sm-6">
 										<form:input name="firstname" path="contactus.firstname"  type="text" class="form-control" id="firstname"
-											placeholder="First Name" />
+											placeholder="First Name" aria-describedby="name-format" required="true" />
 									</div>
 								</div>
 								<div class="form-group">
@@ -71,7 +71,7 @@
 										Number</label>
 									<div class="col-sm-6">
 										<form:input name="phonenumber" path="contactus.phonenumber"  type="text" class="form-control" id="phonenumber"
-											placeholder="Phone Number"/>
+											placeholder="Phone Number" aria-describedby="name-format" min="5" max="10" pattern="[0-9]{5,10}" required="true" title="Please enter the phonnumber"/>
 									</div>
 								</div>
 

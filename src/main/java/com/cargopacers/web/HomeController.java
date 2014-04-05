@@ -50,7 +50,7 @@ public class HomeController {
   public String saveContactUs(@ModelAttribute("contactus") ContactUs contactus,ModelMap modelMap) {
     contactUsService.save(contactus); 
     modelMap.addAttribute("successmessage"," Thank you for writing us. We will getback to you soon.");
-    return "forward:/contactus";
+    return "contactus";
   }
 
   @RequestMapping(value = { "/services" }, method = RequestMethod.GET)
