@@ -42,4 +42,11 @@
     <put-attribute name="title" value="CargoBolt Contactus Page" />
     <put-attribute name="footer" value="/WEB-INF/views/layouts/footer.jsp" />
   </definition>
+  <definition name="admin" template="/WEB-INF/views/layouts/admin/home.jsp">
+  
+  </definition>
+  <definition name="adminUserRegistration" template="/WEB-INF/views/layouts/admin.jsp">
+  	<put-attribute name="title" value="CargoBolt Admin User Registration Page" />
+  	<put-attribute name="header" value="/WEB-INF/views/layouts/admin/head.jsp" />
+  </definition>
 </tiles-definitions>
