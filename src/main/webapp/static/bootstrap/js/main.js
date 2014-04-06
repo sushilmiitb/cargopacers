@@ -60,8 +60,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 	$('#timepicker1').datetimepicker({
 		pickDate:false,
-		showToday : true,
-		minDate : moment().local().subtract('days', 1)
+		showToday : true
 	});
 	$('#timepicker1').on("dp.change", function(e) {
 		$('#timepicker1').addClass("has-success");

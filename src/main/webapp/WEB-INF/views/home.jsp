@@ -114,7 +114,7 @@
 											Date</label>
 										<div class="col-sm-6">
 											<div class='input-group date' id='datepicker1'>
-												<form:input path="bookingdata.pickupDate" type='text' class="form-control" /> <span
+												<form:input path="bookingdata.pickupDate" type='date' class="form-control" /> <span
 													class="input-group-addon"><span
 													class="glyphicon glyphicon-calendar"></span> </span>
 											</div>
@@ -125,7 +125,7 @@
 											Time</label>
 										<div class="col-sm-6">
 											<div class='input-group date' id='timepicker1'>
-												<form:input path="bookingdata.pickUpTime" type='text' class="form-control" /> <span
+												<form:input path="bookingdata.pickUpTime" type='time' class="form-control" /> <span
 													class="input-group-addon"><span
 													class="glyphicon glyphicon-time"></span> </span>
 											</div>
