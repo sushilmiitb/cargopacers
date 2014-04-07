@@ -29,5 +29,4 @@ public class RegistrationController {
     modelMap.addAttribute("successmessage","Thank you for registering with us. Our cutsomer representative will call you to verify the registration");
     return "register";
   }
-
 }
