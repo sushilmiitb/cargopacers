@@ -15,11 +15,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
-import org.springframework.format.annotation.DateTimeFormat;
-import org.springframework.format.annotation.DateTimeFormat.ISO;
 
 /**
  * 
@@ -79,6 +76,9 @@ public class Order implements Serializable {
   @Column(name ="pickupDate")
   @Temporal(TemporalType.DATE)
   private Date pickupDate;
+  
+  @Column(name ="pickupTime")
+  private String pickUpTime;
   
   public String getMakeCompany() {
     return makeCompany;
@@ -140,6 +140,12 @@ public class Order implements Serializable {
   public void setPickupDate(Date pickupDate) {
     this.pickupDate = pickupDate;
   }
+  public String getPickUpTime() {
+    return pickUpTime;
+  }
+  public void setPickUpTime(String pickUpTime) {
+    this.pickUpTime = pickUpTime;
+  }
   public Long getChassisType() {
     return chassisType;
   }
@@ -159,7 +165,6 @@ public class Order implements Serializable {
   @ManyToOne
   @JoinColumn(name="to_party_id")
   private Party toParty;
-  private Date pickupTime;
   private Date dropTime;
   
   @CreatedDate
@@ -214,12 +219,7 @@ public class Order implements Serializable {
   public void setToParty(Party toParty) {
     this.toParty = toParty;
   }
-  public Date getPickupTime() {
-    return pickupTime;
-  }
-  public void setPickupTime(Date pickupTime) {
-    this.pickupTime = pickupTime;
-  }
+  
   public Date getDropTime() {
     return dropTime;
   }

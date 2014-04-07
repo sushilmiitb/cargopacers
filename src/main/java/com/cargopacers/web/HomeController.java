@@ -8,9 +8,11 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.cargopacers.model.ContactUs;
 import com.cargopacers.model.Order;
+import com.cargopacers.model.UserRegistration;
 import com.cargopacers.service.ContactUsService;
 import com.cargopacers.service.ShipperService;
 import com.cargopacers.service.UserRegistrationService;
@@ -32,10 +34,12 @@ public class HomeController {
   }
   
   @RequestMapping(value = { "home_success" }, method = RequestMethod.POST)
-  public String homeSuccess(@ModelAttribute("bookingdata") Order order,ModelMap modelMap) {
+  public String homeSuccess(@ModelAttribute("bookingdata") Order order,@ModelAttribute("userregistration") UserRegistration userRegistration, ModelMap modelMap) {
     shipperService.saveBookTruckForm(order);
-    modelMap.addAttribute("successmessage"," Thank you for writing us. We will getback to you soon.");
-    return "home";
+    ModelAndView mv = new ModelAndView();
+    modelMap.addAttribute("bookingdata", order);
+    mv.addObject("order",order);
+    return "register-bookTruck";
   }
 
   @RequestMapping(value = { "/aboutus" }, method = RequestMethod.GET)

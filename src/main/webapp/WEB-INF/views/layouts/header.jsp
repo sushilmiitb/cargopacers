@@ -19,7 +19,7 @@
 				<div class="collapse navbar-collapse"
 					id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
-						<li class="active" id="home"
+						<li id="home"
 							onclick="changeStyle('home','aboutus','services','contactus','register')"><a
 							href="/cargo/home">Home</a></li>
 						<li id="aboutus"><a href="/cargo/aboutus"
@@ -72,7 +72,7 @@
 							document.getElementById('services').className = '';
 							document.getElementById('contactus').className = '';
 							document.getElementById('register').className = '';
-						} else if (pathname == "/cargo/home") {
+						} else if (pathname == "/cargo/home" || pathname == "/cargo/") {
 							document.getElementById('home').className = 'active';
 							document.getElementById('aboutus').className = '';
 							document.getElementById('services').className = '';

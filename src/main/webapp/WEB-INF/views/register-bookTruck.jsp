@@ -146,7 +146,7 @@
 								<div class="form-group">
 									<label for="Source" class="col-sm-4 control-label">Source</label>
 									<div class="col-sm-6">
-										<form:select path="bookingdata.fromAddress.city"
+										<form:select path="bookingdata.fromAddress.city" value="abc"
 											class="form-control" id="source">
 											<form:option value="--">--Source--</form:option>
 											<form:option value="Ahmedabad">Ahmedabad</form:option>
@@ -176,7 +176,7 @@
 									<label for="Destination" class="col-sm-4 control-label">Destination</label>
 									<div class="col-sm-6">
 										<form:select path="bookingdata.toAddress.city"
-											class="form-control" id="destination">
+											class="form-control" id="destination" value="${order.toAddress.city}">
 											<form:option value="--">--Destination--</form:option>
 											<form:option value="Ahmedabad">Ahmedabad</form:option>
 											<form:option value="Ajmer" hidden="true">Ajmer</form:option>
@@ -205,7 +205,7 @@
 									<label for="weight" class="col-sm-4 control-label">Weight</label>
 									<div class="col-sm-6">
 										<form:select path="bookingdata.gwt" class="form-control"
-											id="weight">
+											id="weight" value="${order.gwt}">
 											<form:option value="0">--Weight(Tonnage)--</form:option>
 											<form:option value="9">9 Ton</form:option>
 											<form:option value="10">10 Ton</form:option>
@@ -220,7 +220,7 @@
 									<div class="col-sm-6">
 										<div class='input-group date' id='datepicker1'>
 											<form:input path="bookingdata.pickupDate" type='text'
-												class="form-control" />
+												class="form-control" value="${order.pickupDate}"/>
 											<span class="input-group-addon"><span
 												class="glyphicon glyphicon-calendar"></span> </span>
 										</div>
@@ -231,8 +231,8 @@
 										Time</label>
 									<div class="col-sm-6">
 										<div class='input-group date' id='timepicker1'>
-											<form:input path="bookingdata.pickupTime" type='text'
-												class="form-control" />
+											<form:input path="bookingdata.pickUpTime" type='text'
+												class="form-control" value="${order.pickUpTime}"/>
 											<span class="input-group-addon"><span
 												class="glyphicon glyphicon-time"></span> </span>
 										</div>
