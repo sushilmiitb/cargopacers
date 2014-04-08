@@ -42,31 +42,22 @@ $(window).load(function() {
 	})
 });
 
-$(document).ready(function() {
+$(function() {
 	$('#datepicker1').datetimepicker({
 		pickTime : false,
 		showToday : true,
-		minDate : moment().local().subtract('days', 1)
+		minDate : moment().local().subtract('days', 1),
+		defaultDate : moment().local()
+	});
+	$('#timepicker1').datetimepicker({
+		pickDate:false,
+		defaultDate : moment().local()
 	});
 	$('#datepicker1').on("dp.change", function(e) {
 		$('#datepicker1').addClass("has-success");
 		$('#datepicker1').removeClass("has-error");
 		$('#datepicker1').on("dp.error", function(e) {
 			$('#datepicker1').addClass("has-error");
-		});
-	});
-});
-
-$(document).ready(function() {
-	$('#timepicker1').datetimepicker({
-		pickDate:false,
-		showToday : true
-	});
-	$('#timepicker1').on("dp.change", function(e) {
-		$('#timepicker1').addClass("has-success");
-		$('#timepicker1').removeClass("has-error");
-		$('#timepicker1').on("dp.error", function(e) {
-			$('#timepicker1').addClass("has-error");
 		});
 	});
 });
