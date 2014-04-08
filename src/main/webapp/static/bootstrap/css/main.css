@@ -1,8 +1,5 @@
 @CHARSET "US-ASCII";
 
-.dropdown:hover .dropdown-menu {
-	display: block;
-}
 
 #footerLinks a {
 	line-height: 50px;

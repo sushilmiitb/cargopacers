@@ -31,8 +31,7 @@
 							onclick="changeStyle('contactus','home','aboutus','services','register')">Contact
 								Us</a></li>
 						<li class=" divider"></li>
-						<li id="login1" onmouseout="closeDropdown('login1')"
-							onmouseover="activeDropdown('login1')" class="dropdown"><a
+						<li id="login1"  class="dropdown"><a
 							href="#" class="dropdown-toggle" data-hover="dropdown"
 							data-toggle="dropdown">Login<strong class="caret"></strong></a>
 							<ul class="dropdown-menu"
