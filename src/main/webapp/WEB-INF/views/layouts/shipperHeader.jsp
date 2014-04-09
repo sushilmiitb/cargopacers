@@ -1,5 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
+<%@ taglib prefix="sec"
+	uri="http://www.springframework.org/security/tags"%>
 <div>
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="container-fluid">
@@ -12,8 +13,8 @@
 							class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="/cargo/shipper/bookTruck"
-					onclick="changeStyle('home','aboutus','services','contactus','register')">
-					CargoBolt</a>
+						onclick="changeStyle('home','aboutus','services','contactus','register')">
+						CargoBolt</a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse"
@@ -37,31 +38,34 @@
 							data-toggle="dropdown">Login<strong class="caret"></strong></a>
 							<ul class="dropdown-menu"
 								style="padding: 15px; padding-bottom: 15px;">
-                <sec:authorize access="isAnonymous()">
-								<form action="j_spring_security_check" method="post"
-									accept-charset="UTF-8">
-									<input id="j_username" style="margin-bottom: 15px;" type="text"
-										name="j_username" size="30" placeholder="Username" /> <input
-										id="j_password" style="margin-bottom: 15px;" type="password"
-										name="j_password" size="30" placeholder="Password" /> <input
-										id="user_remember_me" style="float: left; margin-right: 10px;"
-										type="checkbox" name="j_spring_security_check" value="1" /> <label
-										class="string optional" for="user_remember_me">Remember
-										me</label> <br/><a href="#" > Forgot Password? </a><br /><input class="btn btn-default"
-										style="clear: left; width: 100%; height: 32px; font-size: 13px;"
-										type="submit" name="commit" value="Sign In" />
-								</form>
-                </sec:authorize>
-                <sec:authorize access="isAuthenticated()">
-                    <a href="<c:url value="/j_spring_security_logout" />">Logout</a>
-               </sec:authorize>
+								<sec:authorize access="isAnonymous()">
+									<form action="j_spring_security_check" method="post"
+										accept-charset="UTF-8">
+										<input id="j_username" style="margin-bottom: 15px;"
+											type="text" name="j_username" size="30"
+											placeholder="Username" /> <input id="j_password"
+											style="margin-bottom: 15px;" type="password"
+											name="j_password" size="30" placeholder="Password" /> <input
+											id="user_remember_me"
+											style="float: left; margin-right: 10px;" type="checkbox"
+											name="j_spring_security_check" value="1" /> <label
+											class="string optional" for="user_remember_me">Remember
+											me</label> <br />
+										<a href="#"> Forgot Password? </a><br />
+										<input class="btn btn-default"
+											style="clear: left; width: 100%; height: 32px; font-size: 13px;"
+											type="submit" name="commit" value="Sign In" />
+									</form>
+								</sec:authorize>
+								<sec:authorize access="isAuthenticated()">
+									<a href="<c:url value="/j_spring_security_logout" />">Logout</a>
+								</sec:authorize>
 							</ul></li>
-						<li id="register"><a href="/cargo/register" 
-						onclick="changeStyle('register','services','home','aboutus','contactus')">Register</a></li>
-						<li><form class="navbar-form navbar-left" role="search">
-        
-        <button type="submit" class="btn btn-default hide">LogOut</button>
-      </form></li>
+
+						<li><form class="navbar-form navbar-left" role="logout">
+
+								<button type="submit" class="btn btn-default hide">LogOut</button>
+							</form></li>
 					</ul>
 					<script type="text/javascript">
 						var divSelected = null;
@@ -72,7 +76,7 @@
 							document.getElementById('services').className = '';
 							document.getElementById('contactus').className = '';
 							document.getElementById('register').className = '';
-						} else if (pathname == "/cargo/home") {
+						} else if (pathname == "/cargo/shipper/bookTruck") {
 							document.getElementById('home').className = 'active';
 							document.getElementById('aboutus').className = '';
 							document.getElementById('services').className = '';
@@ -90,8 +94,7 @@
 							document.getElementById('services').className = '';
 							document.getElementById('home').className = '';
 							document.getElementById('register').className = '';
-						}
-						else if (pathname == "/cargo/register") {
+						} else if (pathname == "/cargo/register") {
 							document.getElementById('register').className = 'active';
 							document.getElementById('aboutus').className = '';
 							document.getElementById('services').className = '';
