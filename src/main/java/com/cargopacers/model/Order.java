@@ -15,8 +15,10 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.format.annotation.DateTimeFormat;
 
 /**
  * 
@@ -75,10 +77,13 @@ public class Order implements Serializable {
   
   @Column(name ="pickupDate")
   @Temporal(TemporalType.DATE)
+  @DateTimeFormat(pattern="MM/dd/yyyy")
   private Date pickupDate;
   
   @Column(name ="pickupTime")
-  private String pickUpTime;
+  @Temporal(TemporalType.TIME)
+  @DateTimeFormat(style="-S")
+  private Date pickUpTime;
   
   public String getMakeCompany() {
     return makeCompany;
@@ -140,10 +145,10 @@ public class Order implements Serializable {
   public void setPickupDate(Date pickupDate) {
     this.pickupDate = pickupDate;
   }
-  public String getPickUpTime() {
+  public Date getPickUpTime() {
     return pickUpTime;
   }
-  public void setPickUpTime(String pickUpTime) {
+  public void setPickUpTime(Date pickUpTime) {
     this.pickUpTime = pickUpTime;
   }
   public Long getChassisType() {

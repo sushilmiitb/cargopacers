@@ -1,5 +1,6 @@
 package com.cargopacers.web;
 
+import java.sql.Time;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -90,11 +91,6 @@ public class HomeController {
   }
   
   
-  @InitBinder
-  public void initBinder(WebDataBinder binder) {
-      SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
-      dateFormat.setLenient(false);
-      binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, false));
-  }
+ 
   
 }
