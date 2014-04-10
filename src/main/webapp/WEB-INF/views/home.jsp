@@ -1,5 +1,5 @@
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <tiles:insertDefinition name="homepage">
@@ -39,12 +39,14 @@
 						<div style="margin-top: 6%">
 							<div class="panel panel-info">
 								<div class="text-center panel-heading">Full Truck Load</div>
-								<form class="form-horizontal panel-body text-center" role="form" modelAttribute="bookingdata"
-									style="" action="home_success" method="POST" >
+								<form class="form-horizontal panel-body text-center" role="form"
+									modelAttribute="bookingdata" style="" action="home_success"
+									method="POST">
 									<div class="form-group">
 										<label for="Source" class="col-sm-4 control-label">Source</label>
 										<div class="col-sm-6">
-											<form:select path="bookingdata.fromAddress.city" class="form-control" id="source">
+											<form:select path="bookingdata.fromAddress.city"
+												class="form-control" id="source">
 												<form:option value="--">--Source--</form:option>
 												<form:option value="Ahmedabad">Ahmedabad</form:option>
 												<form:option value="Ajmer">Ajmer</form:option>
@@ -72,7 +74,8 @@
 									<div class="form-group">
 										<label for="Destination" class="col-sm-4 control-label">Destination</label>
 										<div class="col-sm-6">
-											<form:select path="bookingdata.toAddress.city" class="form-control" id="destination">
+											<form:select path="bookingdata.toAddress.city"
+												class="form-control" id="destination">
 												<form:option value="--">--Destination--</form:option>
 												<form:option value="Ahmedabad">Ahmedabad</form:option>
 												<form:option value="Ajmer" hidden="true">Ajmer</form:option>
@@ -100,7 +103,8 @@
 									<div class="form-group">
 										<label for="weight" class="col-sm-4 control-label">Weight</label>
 										<div class="col-sm-6">
-											<form:select path="bookingdata.gwt" class="form-control" id="weight">
+											<form:select path="bookingdata.gwt" class="form-control"
+												id="weight">
 												<form:option value="0">--Weight(Tonnage)--</form:option>
 												<form:option value="9">9 Ton</form:option>
 												<form:option value="10">10 Ton</form:option>
@@ -113,9 +117,10 @@
 										<label for="Date" class="col-sm-4 control-label">Pick-Up
 											Date</label>
 										<div class="col-sm-6">
-											<div class='input-group date' id='datepicker1'>
-												<form:input path="bookingdata.pickupDate" type='date' class="form-control" /> <span
-													class="input-group-addon"><span
+											<div class="input-group date" id="datepicker1">
+												<form:input path="bookingdata.pickupDate" type="date"
+													class="form-control" id="pickupDate" readonly="true"/>
+												<span class="input-group-addon"><span
 													class="glyphicon glyphicon-calendar"></span> </span>
 											</div>
 										</div>
@@ -124,9 +129,10 @@
 										<label for="Date" class="col-sm-4 control-label">Pick-Up
 											Time</label>
 										<div class="col-sm-6">
-											<div class='input-group date' id='timepicker1'>
-												<form:input path="bookingdata.pickUpTime" type='time' class="form-control" /> <span
-													class="input-group-addon"><span
+											<div class="input-group date" id="timepicker1">
+												<form:input path="bookingdata.pickUpTime" type="time"
+													class="form-control" id="pickUpTime" readonly="true"/>
+												<span class="input-group-addon"><span
 													class="glyphicon glyphicon-time"></span> </span>
 											</div>
 										</div>
@@ -138,8 +144,8 @@
 									</div>
 								</form>
 								<c:if test="${not empty '${successmessage}' }">
-										<div style="color:#008000" > ${successmessage}</div>
-							</c:if>
+									<div style="color: #008000">${successmessage}</div>
+								</c:if>
 							</div>
 						</div>
 					</div>
@@ -181,17 +187,20 @@
 								<li><p>
 										<img src="/cargo/static/img/accept.png"> <span>We
 											are a group of IIM and IIT graduates building the next
-											generation solution for transporting cargo. We envision to bring
-											the same level of efficiency in cargo transportation that people
-											expect for their own movement in flights. We use state of the
-											art technologies and are changing the way people think and operate in the trucking industry. When we promise
+											generation solution for transporting cargo. We envision to
+											bring the same level of efficiency in cargo transportation
+											that people expect for their own movement in flights. We use
+											state of the art technologies and are changing the way people
+											think and operate in the trucking industry. When we promise
 											something, we deliver it. No excuses.</span>
 									</p></li>
 								<li><p>
 										<img src="/cargo/static/img/accept.png"> <span>We
 											would be happy to understand your trucking needs and look
-											forward to serving you. Please <a href="http://www.cargobolt.com/cargo/contactus">Contact Us </a> and
-											we&apos;ll get back to you.</span>
+											forward to serving you. Please <a
+											href="http://www.cargobolt.com/cargo/contactus">Contact
+												Us </a> and we&apos;ll get back to you.
+										</span>
 									</p></li>
 							</ul>
 						</div>
@@ -213,8 +222,9 @@
 											a truck in 60 seconds</span>
 									</h5></li>
 								<li><h5>
-										<img src="/cargo/static/img/accept.png"> <span>Competitive pricing</span>
-								</h5></li>	
+										<img src="/cargo/static/img/accept.png"> <span>Competitive
+											pricing</span>
+									</h5></li>
 								<li><h5>
 										<img src="/cargo/static/img/accept.png"> <span>Online
 											and offline booking</span>
@@ -246,10 +256,13 @@
 								full-truck loads of all sizes in Gujarat, Rajasthan, Haryana and
 								Delhi. We offer customized pick-up and delivery services to best
 								serve the needs of our various customers.</p>
-							<p>Once you are registered with us, you can book trucks both
-								online and offline. We provide 100% reliable cargo movement and
-								unbeatable execution. <a href="http://www.cargobolt.com/cargo/register">Register</a> here to get
-								started.</p>
+							<p>
+								Once you are registered with us, you can book trucks both online
+								and offline. We provide 100% reliable cargo movement and
+								unbeatable execution. <a
+									href="http://www.cargobolt.com/cargo/register">Register</a>
+								here to get started.
+							</p>
 						</div>
 					</div>
 				</div>

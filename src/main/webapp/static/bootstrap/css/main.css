@@ -99,3 +99,7 @@
 	background-position: right top;
 	right: 34px;
 }
+
+.date>input:hover,.date>input:hover{
+	cursor: pointer;
+}

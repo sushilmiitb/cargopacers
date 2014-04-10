@@ -50,19 +50,20 @@ $(function() {
 		defaultDate : moment().local()
 	});
 	$('#timepicker1').datetimepicker({
-		pickDate:false,
+		pickDate : false,
 		defaultDate : moment().local()
 	});
-	$('#datepicker1').on("dp.change", function(e) {
-		$('#datepicker1').addClass("has-success");
-		$('#datepicker1').removeClass("has-error");
-		$('#datepicker1').on("dp.error", function(e) {
-			$('#datepicker1').addClass("has-error");
-		});
+	$('#pickupDate').datetimepicker({
+		pickTime : false,
+		showToday : true,
+		minDate : moment().local().subtract('days', 1),
+		defaultDate : moment().local()
+	});
+	$('#pickUpTime').datetimepicker({
+		pickDate : false,
+		defaultDate : moment().local()
 	});
 });
-
-
 
 function initialize() {
 	var myLatlng = new google.maps.LatLng(23.034619, 72.532652);
@@ -84,13 +85,12 @@ function initialize() {
 
 google.maps.event.addDomListener(window, 'load', initialize);
 
-
 $(function() {
-	  // Setup drop down menu
-	  $('.dropdown-toggle').dropdown();
+	// Setup drop down menu
+	$('.dropdown-toggle').dropdown();
 
-	  // Fix input element click problem
-	  $('.dropdown input, .dropdown label').click(function(e) {
-	    e.stopPropagation();
-	  });
+	// Fix input element click problem
+	$('.dropdown input, .dropdown label').click(function(e) {
+		e.stopPropagation();
 	});
+});

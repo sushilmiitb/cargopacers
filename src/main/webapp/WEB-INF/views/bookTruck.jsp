@@ -131,7 +131,7 @@
 											Date</label>
 										<div class='col-sm-5'>
 											<div class='input-group date' id='datepicker1'>
-												<input type='text' class="form-control" /> <span
+												<input type='text' class="form-control" id="pickupDate" readonly="true" /> <span
 													class="input-group-addon"><span
 													class="glyphicon glyphicon-calendar"></span> </span>
 											</div>
@@ -141,8 +141,8 @@
 										<label for="Date" class="col-sm-4 control-label">Pick-Up
 											Time</label>
 										<div class="col-sm-5">
-											<div class='input-group date' id='timepicker1'>
-												<input  type='text' class="form-control" /> <span
+											<div class='input-group date' id="timepicker1">
+												<input  type='text' class="form-control" id="pickUpTime" readonly="true"/> <span
 													class="input-group-addon"><span
 													class="glyphicon glyphicon-time"></span> </span>
 											</div>
