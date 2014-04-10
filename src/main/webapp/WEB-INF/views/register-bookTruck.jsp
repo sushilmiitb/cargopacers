@@ -115,7 +115,7 @@
 												class="form-control" id="inputphone"
 												placeholder="Phone Number" aria-describedby="name-format"
 												min="5" max="10" pattern="[0-9]{5,10}" required="true"
-												title="Please enter correct phonnumber" />
+												title="Please enter correct phone number" />
 										</div>
 									</div>
 									<div class="form-group">
