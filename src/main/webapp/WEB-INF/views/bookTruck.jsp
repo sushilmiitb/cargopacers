@@ -186,7 +186,8 @@
 									</div>
 									<div class="form-group">
 										<div class="col-sm-offset-4 col-sm-5">
-											<button type="submit" class="btn btn-info">Book Now</button>
+											<button type="submit" class="btn btn-info">Book &nbsp;&nbsp;<i
+													class="fa fa-truck"></i></button>
 										</div>
 									</div>
 								</form>
