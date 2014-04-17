@@ -1,5 +1,7 @@
 package com.cargopacers.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
@@ -24,6 +26,11 @@ public class UserRegistrationServiceImpl implements UserRegistrationService {
   public void saveRegistrationDetails(UserRegistration userregistration) {
     
     userRegistartionRepository.save(userregistration);
+  }
+
+  @Override
+  public List<UserRegistration> getAllRegistrationDetails() {
     
+    return userRegistartionRepository.findAll();
   }
 }
