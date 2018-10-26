@@ -1,6 +1,7 @@
 # Cargopacers
 
 Cargopacers, later renamed to Cargobolt was a 5 member team startup in logistic sector. It was a platform for truck booking. This repository contains following features
+
 * Registration and Login
 * Truck booking
 * Order processing and fulfilment
@@ -16,9 +17,6 @@ Cargopacers, later renamed to Cargobolt was a 5 member team startup in logistic 
 
 ### Prerequisites
 
-Maven - For project management
-
-Tomcat server - ```https://www.tecmint.com/install-apache-tomcat-in-centos/```
 
 * install maven 2+ ```sudo apt-get install maven```
 * install java 6+
